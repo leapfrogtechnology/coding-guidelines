@@ -10,3 +10,4 @@ sidebar_label: Classes
 * Classes names should always be `PascalCase`. i.e. `MyClass` 
 * Even if you are building datatypes based on inbuilt class use PascalCase. i.e. `MyDict(dict):`
 * Describe the class resposibility in name.
+* Custom Exceptions should always be named ending with `Error` i.e. `MyCustomError`
