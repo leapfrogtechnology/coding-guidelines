@@ -20,6 +20,21 @@ module.exports =
       "python/environment_and_dependency",
       "python/project_structure"
     ],
+    "Java": [
+      {
+        "type": "category",
+        "label": "Naming Convention",
+        "items": [
+          "java/packages",
+          "java/files",
+          "java/classes",
+          "java/interfaces",
+          "java/variables",
+          "java/functions"
+          
+        ]
+      }
+    ],
     "Naming Convention": [
       "files",
       "classes",
