@@ -12,9 +12,13 @@ module.exports =
           "python/files",
           "python/variables",
           "python/functions",
-          "python/classes",
+          "python/classes"
         ]
-      }
+      },
+      "python/tools",
+      "python/general",
+      "python/environment_and_dependency",
+      "python/project_structure"
     ],
     "Naming Convention": [
       "files",
