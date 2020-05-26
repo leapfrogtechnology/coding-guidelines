@@ -12,9 +12,9 @@ sidebar_label: General Coding Guidelines
 * Use `generators` and `yield` instead of data structures for high streams of data.
 * Use `itertools`, `functools` and `collection` modules to ensure we are using right data structures and utilities.
 * Use `dataclasses` if available. Go for `attrs` library if `dataclass` is not present.
-* Use `is not` and `is` for `None`, `True` and `False` check only.
+* Use `is not` and `is` for `None`, `True` and `False` check only. 
 * Strings: 
-    - Adhere to one quote practice. Double quote is recommended. Python doesnot differentiate between *"'"* or *'"'*
+    - Adhere to one quote practice. Double quote is recommended. Python doesnot differentiate between **'** or **"**.
     - Should be interpolated with either [fstring](https://www.python.org/dev/peps/pep-0498/) or `.format` methods. Try to avoid `%`.
     - `+` can be used for direct string concatenation. Use `join` method for concatenation instead of `+=` when iterating.
 * `logging` is always a must. Use the following levels as required:
@@ -32,6 +32,7 @@ sidebar_label: General Coding Guidelines
 * Use `context` whenever supported especially for io related closing actions.
     - i.e. `with` statement when supported.
     - Always remember to close on exit. i.e. if you open the file `close` on `finally` or better use `with` or `contextlib.closing`.
+* While `python` is an OOP, you can always choose `functions` and `modules` over `class` if there is only one `object` to be created.
 * Use `pdb` as debugger whenever required.
 * Multi-threading can be especially used when we have io bound and network bound multiple operation. Multiprocessing can be used to use multiple cores.
     - Recommended module is `concurrent.futures` in most cases. If lower level API is needed there is always `threading` and `multiprocessing` module.
@@ -42,4 +43,3 @@ sidebar_label: General Coding Guidelines
     - `requests` for http request stuff.
     - `attrs` for data oriented objects and class.
     - `pytest` for tests.
-

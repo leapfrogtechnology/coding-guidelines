@@ -7,7 +7,7 @@ sidebar_label: Files, Folders & Modules
 #### The following convention should be followed for files, folders and package naming:
 
 * Name in `snake_case` or descriptive single words all in **lowercase**. E.g. `helper.py` or `sftp_fetcher.py` or `tools`
-* Be explicit and descriptive of their functionality. Donot have short and ambigous file and folder names.
+* Be explicit and descriptive of their functionality. Donot have short and ambiguous file and folder names.
     - E.g. `utils.py` or `utils` will describe of utility.
     - E.g. `aws_helper.py` will describe helper related to AWS.
 * Donot Clash names with inbuilt and famous modules.

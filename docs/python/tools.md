@@ -26,6 +26,10 @@ sidebar_label: Tools and Libraries
     * Inbuilt `unittest`
 
 #### Other tools
-* [coverage](https://coverage.readthedocs.io/en/coverage-5.1/) for testing code coverage.
+* [coverage](https://coverage.readthedocs.io/en/coverage-5.1/) for checking code coverage of tests.
 * [interrogate](https://interrogate.readthedocs.io/en/latest/) for docstring coverage check.
-* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data.
+* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation in tests.
+
+#### Readings and References:
+* [Design Patterns](https://python-patterns.guide/)
+* [Official Documentation](https://docs.python.org/3/)

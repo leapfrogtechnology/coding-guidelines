@@ -4,7 +4,7 @@ title: Project Structure and Templates
 sidebar_label: Project Structure
 ---
 
-#### The following folder structure should be used for projects:
+### The following folder structure should be used for projects:
 
 
 * :file_folder: Project Root:
@@ -19,10 +19,12 @@ sidebar_label: Project Structure
         + :file_folder: config
     - :file_folder: tests
         + test of projects
-    - :memo: LICENCE (**OPTIONAL**)
+    - :memo: LICENSE (**OPTIONAL**)
     - :memo: README (can be `md` or `rst`)
     - Other configurable from third parties (**OPTIONAL**) such as tox.ini
 
 
 
-Please look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) for template generation which gives a lot of options.
+##### Template Generation: 
+* Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) tool for template generation.
+    - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/)
