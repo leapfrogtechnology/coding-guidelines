@@ -36,10 +36,10 @@ sidebar_label: General Coding Guidelines
 * Use `pdb` as debugger whenever required.
 * Multi-threading can be especially used when we have io bound and network bound multiple operation. Multiprocessing can be used to use multiple cores.
     - Recommended module is `concurrent.futures` in most cases. If lower level API is needed there is always `threading` and `multiprocessing` module.
-    - Use `asyncio` for IO bound async codes. This is something new and constantly changing in `python`.
+    - Use `asyncio` for IO bound async flow. This is something new and constantly changing in `python`.
     - Be very carefult on threads and locks, so always discuss what you are doing.
 * Recommended third party modules:
-    - `sqlalchemy` for ORM related database stuffs.
+    - `sqlalchemy` for ORM related database stuffs if using multiple databases. Single db driver will work in most cases like `sqlite` or `pyodbc` etc.
     - `requests` for http request stuff.
     - `attrs` for data oriented objects and class.
     - `pytest` for tests.

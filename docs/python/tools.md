@@ -28,7 +28,7 @@ sidebar_label: Tools and Libraries
 #### Other tools:
 * [coverage](https://coverage.readthedocs.io/en/coverage-5.1/) for checking code coverage of tests.
 * [interrogate](https://interrogate.readthedocs.io/en/latest/) for docstring coverage check.
-* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation in tests.
+* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation and mocking in tests.
 * [tox](https://tox.readthedocs.io/en/latest/) for test automation in different `python` version
     - Alternative: [nox](https://nox.thea.codes/en/stable/) is an alternative to `tox`.
 * [mypy](http://mypy-lang.org/index.html) optional static type coding with python through annotations.

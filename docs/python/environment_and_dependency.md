@@ -20,5 +20,4 @@ sidebar_label: Environment Isolation and Dependency Management
 ##### Dependency Management:
 
 * [poetry](https://python-poetry.org/) is recommended.
-    - If not `poetry` use `pip` with `requirements.txt`
-* You can use `setuptools` and `setup.py` as well for requirements handling. They **must** be used for install-able modules.
+* You can use `setuptools` and `setup.py` as well for requirements handling through `requires` variable as well. They **must** be used for install-able modules.
