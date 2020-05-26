@@ -39,7 +39,10 @@ sidebar_label: General Coding Guidelines
     - Use `asyncio` for IO bound async flow. This is something new and constantly changing in `python`.
     - Be very carefult on threads and locks, so always discuss what you are doing.
 * Recommended third party modules:
-    - `sqlalchemy` for ORM related database stuffs if using multiple databases. Single db driver will work in most cases like `sqlite`,`pyodbc`,`mysqlclient` etc.
+    - For Relational Database:
+        + Use `sqlalchemy` [core](https://docs.sqlalchemy.org/en/13/core/){:target="_blank"} for DB abstraction. This is particularly helpful when doing testing in `sqlite` and some other database for production.
+        + Use `sqlalchemy` [ORM](https://docs.sqlalchemy.org/en/13/orm/){:target="_blank"} or framework supported ORM when using specific framework.
+        + Use DBAPI drivers such as `pyodbc`, `sqlite`, `mysqlclient` etc only when you donot want `sqlalchemy` dependency or when you are very performance conscious. While the API will be mostly compatible for this as python has DBAPI specification. Parameters binding and some methods may be incompatible or unavailable. 
     - `requests` for http request stuff.
     - `attrs` for data oriented objects and class.
     - `pytest` for tests.
