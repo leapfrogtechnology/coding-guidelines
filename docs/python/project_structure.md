@@ -26,5 +26,5 @@ sidebar_label: Project Structure
 
 
 ##### Template Generation: 
-* Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) tool for template generation.
-    - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/)
+* Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/){:target="_blank"} tool for template generation.
+    - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/){:target="_blank"}

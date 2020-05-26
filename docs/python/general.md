@@ -8,14 +8,14 @@ sidebar_label: General Coding Guidelines
 
 * Always use `python3` and try to stay above version `3.5`. **Latest stable** is recommended.
 * Indentation should always be **space** and width should always be **4**.
-* `Docker` can be used for deployment. Use `python` images for [docker](https://hub.docker.com/_/python).
+* `Docker` can be used for deployment. Use `python` images for [docker](https://hub.docker.com/_/python){:target="_blank"}.
 * Use `generators` and `yield` instead of data structures for high streams of data.
 * Use `itertools`, `functools` and `collection` modules to ensure we are using right data structures and utilities.
 * Use `dataclasses` if available. Go for `attrs` library if `dataclass` is not present.
 * Use `is not` and `is` for `None`, `True` and `False` check only. 
 * Strings: 
     - Adhere to one quote practice. Double quote is recommended. Python doesnot differentiate between **'** or **"**.
-    - Should be interpolated with either [fstring](https://www.python.org/dev/peps/pep-0498/) or `.format` methods. Try to avoid `%`.
+    - Should be interpolated with either [fstring](https://www.python.org/dev/peps/pep-0498/){:target="_blank"} or `.format` methods. Try to avoid `%`.
     - `+` can be used for direct string concatenation. Use `join` method for concatenation instead of `+=` when iterating.
 * `logging` is always a must. Use the following levels as required:
     - **DEBUG**: log parameters and arguments. Information needed when we need to debug or develop. Should be avoided in production.
@@ -39,7 +39,7 @@ sidebar_label: General Coding Guidelines
     - Use `asyncio` for IO bound async flow. This is something new and constantly changing in `python`.
     - Be very carefult on threads and locks, so always discuss what you are doing.
 * Recommended third party modules:
-    - `sqlalchemy` for ORM related database stuffs if using multiple databases. Single db driver will work in most cases like `sqlite` or `pyodbc` etc.
+    - `sqlalchemy` for ORM related database stuffs if using multiple databases. Single db driver will work in most cases like `sqlite`,`pyodbc`,`mysqlclient` etc.
     - `requests` for http request stuff.
     - `attrs` for data oriented objects and class.
     - `pytest` for tests.
