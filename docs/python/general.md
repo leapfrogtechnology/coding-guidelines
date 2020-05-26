@@ -16,7 +16,7 @@ sidebar_label: General Coding Guidelines
 * Strings: 
     - Adhere to one quote practice. Double quote is recommended. Python doesnot differentiate between *"'"* or *'"'*
     - Should be interpolated with either [fstring](https://www.python.org/dev/peps/pep-0498/) or `.format` methods. Try to avoid `%`.
-    - Use `join` method for concatenation instead of `+`
+    - `+` can be used for direct string concatenation. Use `join` method for concatenation instead of `+=` when iterating.
 * `logging` is always a must. Use the following levels as required:
     - **DEBUG**: log parameters and arguments. Information needed when we need to debug or develop. Should be avoided in production.
     - **INFO**: log basic information such as function entry, file being processed et al
@@ -29,7 +29,7 @@ sidebar_label: General Coding Guidelines
 * `Exception` handling is a must along with logging.
     - Do not use bare `except` or `except Exception` which catches all the exception. Be specific on exception. E.g. catch only `FileNotFoundError` if you are say moving a file.
     - For modules specific error, if something internal is not fulfilling then try to create custom `Exception` class primarily naming it Error such as `MyCustomError(Exception)` and use it.
-* Use `context` whenever supported especially for io related actions.
+* Use `context` whenever supported especially for io related closing actions.
     - i.e. `with` statement when supported.
     - Always remember to close on exit. i.e. if you open the file `close` on `finally` or better use `with` or `contextlib.closing`.
 * Use `pdb` as debugger whenever required.
@@ -41,5 +41,5 @@ sidebar_label: General Coding Guidelines
     - `sqlalchemy` for ORM related database stuffs.
     - `requests` for http request stuff.
     - `attrs` for data oriented objects and class.
-    -  `pytest` for tests.
+    - `pytest` for tests.
 
