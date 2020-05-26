@@ -37,3 +37,4 @@ sidebar_label: Tools and Libraries
 * [Design Patterns](https://python-patterns.guide/)
 * [Official Documentation](https://docs.python.org/3/)
 * [Python Code Quality](https://meta.pycqa.org/en/latest/index.html) for the tools like `flake8`, `pylint`, `bandit` etc along with others.
+* [Python Packages](https://www.pypa.io/en/latest/)
