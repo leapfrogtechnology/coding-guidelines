@@ -13,11 +13,13 @@ sidebar_label: Tools and Libraries
 #### Linters:
 * [flake8](https://flake8.pycqa.org/en/latest/) with [plugins](https://github.com/DmytroLitvinov/awesome-flake8-extensions)
     * Alternative: [pylint](https://www.pylint.org)
+* [bandit](https://bandit.readthedocs.io/en/latest/) to find common security issues. This can be used with `flake8` as a [plugin](https://pypi.org/project/flake8-bandit/).
 
 #### Formatters:
 * [black](https://black.readthedocs.io/en/stable/)
     - Alternative: [autopep8](https://pypi.org/project/autopep8/)
     - Alternative: [yapf](https://pypi.org/project/yapf/) 
+* [isort](https://timothycrosley.github.io/isort/) for sorting only imports in codes. This is OPTIONAL.
 
 #### Testing:
 * [pytest](https://pytest.org) with [plugins](https://docs.pytest.org/en/2.7.3/plugins_index/index.html)
@@ -29,7 +31,9 @@ sidebar_label: Tools and Libraries
 * [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation in tests.
 * [tox](https://tox.readthedocs.io/en/latest/) for test automation in different `python` version
     - Alternative: [nox](https://nox.thea.codes/en/stable/) is an alternative to `tox`.
+* [mypy](http://mypy-lang.org/index.html) optional static type coding with python through annotations.
 
 #### Readings and References:
 * [Design Patterns](https://python-patterns.guide/)
 * [Official Documentation](https://docs.python.org/3/)
+* [Python Code Quality](https://meta.pycqa.org/en/latest/index.html) for the tools like `flake8`, `pylint`, `bandit` etc along with others.
