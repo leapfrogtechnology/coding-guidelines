@@ -18,6 +18,7 @@ sidebar_label: General Coding Guidelines
     - ternary with `if else` in same line. Donot use `and or` clause. i.e. `value and req_value or default`. 
     - `classmethod` for multiple way of class initialization
 * use namespace whenever possible. Use `as SOMEOTHERNAMESPACE` for collision of namespace
+* use `mypy` and type annotation when possible for type safe code.
 * `Docker` can be used for deployment. Use `python` images for [docker](https://hub.docker.com/_/python){:target="_blank"}.
 * Use `generators` and `yield` instead of data structures for high streams of data.
 * Use `itertools`, `functools` for utilities and `collection` for data structures.
