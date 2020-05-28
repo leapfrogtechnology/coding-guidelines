@@ -1,0 +1,18 @@
+{
+  "id": "git/smart_commit",
+  "title": "Smart Commit",
+  "description": "Smart commits allows a team to perform actions on Jira issues from a single commit.  Users can enter the issue key and the desired action such as time tracking or closing an issue.",
+  "source": "@site/docs/git/smart_commit.md",
+  "permalink": "/docs/git/smart_commit",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/git/smart_commit.md",
+  "sidebar_label": "Smart Commit",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Branching Strategy",
+    "permalink": "/docs/git/branching_strategy"
+  },
+  "next": {
+    "title": "Tagging",
+    "permalink": "/docs/git/tagging"
+  }
+}

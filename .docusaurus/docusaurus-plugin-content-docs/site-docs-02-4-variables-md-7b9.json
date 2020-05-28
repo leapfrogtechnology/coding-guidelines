@@ -1,0 +1,18 @@
+{
+  "id": "variables",
+  "title": "Variables",
+  "description": "1. Contents...",
+  "source": "@site/docs/02-4-variables.md",
+  "permalink": "/docs/variables",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-4-variables.md",
+  "sidebar_label": "Variables",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Function",
+    "permalink": "/docs/functions"
+  },
+  "next": {
+    "title": "Constants",
+    "permalink": "/docs/constants"
+  }
+}

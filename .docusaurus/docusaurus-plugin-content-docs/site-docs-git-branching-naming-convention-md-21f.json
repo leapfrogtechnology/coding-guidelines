@@ -1,0 +1,18 @@
+{
+  "id": "git/branching_naming_convention",
+  "title": "Branching Naming Convention",
+  "description": "The following convention should be followed:",
+  "source": "@site/docs/git/branching_naming_convention.md",
+  "permalink": "/docs/git/branching_naming_convention",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/git/branching_naming_convention.md",
+  "sidebar_label": "Branching Naming Convention",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/introduction"
+  },
+  "next": {
+    "title": "Branching Strategy",
+    "permalink": "/docs/git/branching_strategy"
+  }
+}

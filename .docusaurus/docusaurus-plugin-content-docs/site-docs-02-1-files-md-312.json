@@ -1,0 +1,18 @@
+{
+  "id": "files",
+  "title": "Files",
+  "description": "Contents...",
+  "source": "@site/docs/02-1-files.md",
+  "permalink": "/docs/files",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-1-files.md",
+  "sidebar_label": "Files",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Code Review Checklist",
+    "permalink": "/docs/git/code_reviewe_checklist"
+  },
+  "next": {
+    "title": "Classes",
+    "permalink": "/docs/classes"
+  }
+}

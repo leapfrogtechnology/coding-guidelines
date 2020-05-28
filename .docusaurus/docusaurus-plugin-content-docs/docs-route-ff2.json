@@ -1,0 +1,110 @@
+{
+  "docsSidebars": {
+    "docs": [
+      {
+        "type": "category",
+        "label": "Overview",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/introduction"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Github",
+        "items": [
+          {
+            "type": "link",
+            "label": "Branching Naming Convention",
+            "href": "/docs/git/branching_naming_convention"
+          },
+          {
+            "type": "link",
+            "label": "Branching Strategy",
+            "href": "/docs/git/branching_strategy"
+          },
+          {
+            "type": "link",
+            "label": "Smart Commit",
+            "href": "/docs/git/smart_commit"
+          },
+          {
+            "type": "category",
+            "label": "Release Management",
+            "items": [
+              {
+                "type": "link",
+                "label": "Tagging",
+                "href": "/docs/git/tagging"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "Pull Request Best Practices",
+            "href": "/docs/git/pull_request_best_pratices"
+          },
+          {
+            "type": "link",
+            "label": "Code Review Checklist",
+            "href": "/docs/git/code_reviewe_checklist"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Naming Convention",
+        "items": [
+          {
+            "type": "link",
+            "label": "Files",
+            "href": "/docs/files"
+          },
+          {
+            "type": "link",
+            "label": "Classes",
+            "href": "/docs/classes"
+          },
+          {
+            "type": "link",
+            "label": "Functions",
+            "href": "/docs/functions"
+          },
+          {
+            "type": "link",
+            "label": "Variables",
+            "href": "/docs/variables"
+          },
+          {
+            "type": "link",
+            "label": "Constants",
+            "href": "/docs/constants"
+          },
+          {
+            "type": "link",
+            "label": "Folder",
+            "href": "/docs/folders"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/classes": "docs",
+    "/docs/constants": "docs",
+    "/docs/files": "docs",
+    "/docs/folders": "docs",
+    "/docs/functions": "docs",
+    "/docs/git/branching_naming_convention": "docs",
+    "/docs/git/branching_strategy": "docs",
+    "/docs/git/code_reviewe_checklist": "docs",
+    "/docs/git/pull_request_best_pratices": "docs",
+    "/docs/git/smart_commit": "docs",
+    "/docs/git/tagging": "docs",
+    "/docs/introduction": "docs",
+    "/docs/variables": "docs"
+  }
+}

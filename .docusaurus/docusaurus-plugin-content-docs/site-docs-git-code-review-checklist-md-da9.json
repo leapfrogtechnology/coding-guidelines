@@ -1,0 +1,18 @@
+{
+  "id": "git/code_reviewe_checklist",
+  "title": "Code Review Checklist",
+  "description": "Smart commits allows a team to perform actions on Jira issues from a single commit.  Users can enter the issue key and the desired action such as time tracking or closing an issue.",
+  "source": "@site/docs/git/code_review_checklist.md",
+  "permalink": "/docs/git/code_reviewe_checklist",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/git/code_review_checklist.md",
+  "sidebar_label": "Code Review Checklist",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Pull Request Best Practices",
+    "permalink": "/docs/git/pull_request_best_pratices"
+  },
+  "next": {
+    "title": "Files",
+    "permalink": "/docs/files"
+  }
+}

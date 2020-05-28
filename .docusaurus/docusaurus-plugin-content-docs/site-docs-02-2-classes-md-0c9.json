@@ -1,0 +1,18 @@
+{
+  "id": "classes",
+  "title": "Classes",
+  "description": "Contents...",
+  "source": "@site/docs/02-2-classes.md",
+  "permalink": "/docs/classes",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-2-classes.md",
+  "sidebar_label": "Classes",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Files",
+    "permalink": "/docs/files"
+  },
+  "next": {
+    "title": "Function",
+    "permalink": "/docs/functions"
+  }
+}

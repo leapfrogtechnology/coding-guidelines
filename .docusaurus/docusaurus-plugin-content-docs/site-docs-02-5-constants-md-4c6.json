@@ -1,0 +1,18 @@
+{
+  "id": "constants",
+  "title": "Constants",
+  "description": "1. Contents...",
+  "source": "@site/docs/02-5-constants.md",
+  "permalink": "/docs/constants",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-5-constants.md",
+  "sidebar_label": "Constants",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/docs/variables"
+  },
+  "next": {
+    "title": "Folder",
+    "permalink": "/docs/folders"
+  }
+}
