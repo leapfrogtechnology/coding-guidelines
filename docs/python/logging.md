@@ -10,8 +10,8 @@ sidebar_label: Logging Convention
 * `logging` is always a must. Use the following levels as required:
     - **DEBUG**: log parameters and arguments. Information needed when we need to debug or develop. Should be avoided in production.
     - **INFO**: log basic information such as function entry, file being processed et al
-    - **WARN**: log user security and other warnings that are not critical
-    - **ERROR**: error related logs. Use exception method to log tracebacks in case of exceptions.
+    - **WARN**: log user security and other warnings that may require attention or may need to be avoided.
+    - **ERROR**: errors in programs.
     - **CRITICAL**: blocking issues or immediate attention issues.
 * **ERROR and CRITICAL** levels should be mitigated and informed.
 * `logger` is used for naming single logger. Use `NAME_logger` name for more than one logger when required.
