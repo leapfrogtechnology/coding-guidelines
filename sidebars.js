@@ -17,6 +17,8 @@ module.exports =
       },
       "python/tools",
       "python/general",
+      "python/exceptions",
+      "python/logging",
       "python/environment_and_dependency",
       "python/project_structure"
     ],

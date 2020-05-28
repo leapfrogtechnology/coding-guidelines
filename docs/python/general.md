@@ -17,7 +17,12 @@ sidebar_label: General Coding Guidelines
     - minimal use of `lambda`, use `operator` module with keyfunctions in `sorted`, `groupby` etc.
     - ternary with `if else` in same line. Donot use `and or` clause. i.e. `value and req_value or default`. 
     - `classmethod` for multiple way of class initialization
-* use namespace whenever possible. Use `as SOMEOTHERNAMESPACE` for collision of namespace
+* Imports:
+    - Always `import` specific namespace.
+    - Try to use parent namespace for actions. i.e. `import os: os.path` rather that `from os import path`
+    - Never use `import *` i.e. `from MODULE import *`
+    - use namespace whenever possible. Use `as SOMEOTHERNAMESPACE` for collision of namespace
+* Use `else: #nobreak` if you are using `else` with loops that has `break`.
 * use `mypy` and type annotation when possible for type safe code.
 * `Docker` can be used for deployment. Use `python` images for [docker](https://hub.docker.com/_/python){:target="_blank"}.
 * Use `generators` and `yield` instead of data structures for high streams of data.
@@ -28,18 +33,6 @@ sidebar_label: General Coding Guidelines
     - Adhere to one quote practice. Double quote is recommended. Python doesnot differentiate between **'** or **"**.
     - Should be interpolated with either [fstring](https://www.python.org/dev/peps/pep-0498/){:target="_blank"} or `.format` methods. Try to avoid `%`.
     - `+` can be used for direct string concatenation. Use `join` method for concatenation instead of `+=` when iterating.
-* `logging` is always a must. Use the following levels as required:
-    - **DEBUG**: log parameters and arguments. Information needed when we need to debug or develop. Should be avoided in production.
-    - **INFO**: log basic information such as function entry, file being processed et al
-    - **WARN**: log user security and other warnings that are not critical
-    - **ERROR**: error related logs. Use exception method to log tracebacks in case of exceptions.
-    - **CRITICAL**: blocking issues or immediate attention issues.
-    - **ERROR and CRITICAL** levels should be mitigated and informed.
-    - `logger` is used for naming logger.
-    - It is singleton and single threaded by default for `a name` of the logger. Can be non-blocking if required.
-* `Exception` handling is a must along with logging.
-    - Do not use bare `except` or `except Exception` which catches all the exception. Be specific on exception. E.g. catch only `FileNotFoundError` if you are say moving a file.
-    - For modules specific error, if something internal is not fulfilling then try to create custom `Exception` class primarily naming it Error such as `MyCustomError(Exception)` and use it.
 * Use `context` whenever supported especially for io related closing actions.
     - i.e. `with` statement when supported.
     - Always remember to close on exit. i.e. if you open the file `close` on `finally` or better use `with` or `contextlib.closing`.
@@ -51,7 +44,7 @@ sidebar_label: General Coding Guidelines
     - Use `asyncio` for IO bound async flow. This is something new and constantly changing in `python`.
 * Recommended third party modules:
     - For Relational Database:
-        + Use `sqlalchemy` [core](https://docs.sqlalchemy.org/en/13/core/){:target="_blank"} for DB abstraction. This is particularly helpful when doing testing in `sqlite` and some other database for production.
+        + Use `sqlalchemy` [core](https://docs.sqlalchemy.org/en/13/core/){:target="_blank"} for DB abstraction. This is particularly helpful when doing testing in `sqlite` and some other database for production. Also, for query consistency.
         + Use `sqlalchemy` [ORM](https://docs.sqlalchemy.org/en/13/orm/){:target="_blank"} or framework supported ORM when using specific framework.
         + Use DBAPI drivers such as `pyodbc`, `sqlite`, `mysqlclient` etc only when you donot want `sqlalchemy` dependency or when you are very performance conscious. While the API will be mostly compatible for this as python has DBAPI specification. Parameters binding and some methods may be incompatible or unavailable. 
     - `requests` for http request stuff.
