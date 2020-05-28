@@ -1,4 +1,4 @@
-{
+module.exports = {
   "docs": {
     "Overview": ["introduction"],
     "Github": [
@@ -17,4 +17,4 @@
     ],
     "Naming Convention": ["files", "classes", "functions", "variables", "constants", "folders"]
   }
-}
+};
