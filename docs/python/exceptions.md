@@ -13,6 +13,6 @@ sidebar_label: Exception Handling
     - Write your custom error only when your error is not described or fulfilled by [internal exceptions](https://docs.python.org/3/library/exceptions.html).
     - Create custom `Exception` class primarily suffixing it with `Error` such as `MyCustomError(Exception)` and use it.
     - Always use `Exception` as your parent class for user defined exceptions. Donot use `BaseException`.
-* Add traceback to you mitigation. i.e. either `logging` or mails. Donot `pass`.
+* Add traceback to your mitigation. i.e. either `logging` or mails. Donot `pass`.
 * The `try` block should be specific to desired exception. Donot use huge code chunk in `try`. Use `else` if needed.
 

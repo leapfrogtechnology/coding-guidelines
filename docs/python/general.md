@@ -37,6 +37,7 @@ sidebar_label: General Coding Guidelines
     - i.e. `with` statement when supported.
     - Always remember to close on exit. i.e. if you open the file `close` on `finally` or better use `with` or `contextlib.closing`.
 * While `python` is an OOP, you can always choose `functions` and `modules` over `class` if there is only one `object` to be created.
+* Use `property` setter when writing OOP and you need readonly attributes.
 * Use `pdb` as debugger whenever required.
 * Multi-threading can be especially used when we have io bound and network bound multiple operation. Multiprocessing can be used to use multiple cores.
     - Recommended module is `concurrent.futures` in most cases. If lower level API is needed there is always `threading` and `multiprocessing` module.
