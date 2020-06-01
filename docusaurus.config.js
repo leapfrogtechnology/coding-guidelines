@@ -1,3 +1,4 @@
+const remarkLinks = require('remark-external-links');
 module.exports = {
   title: 'Coding Standards And Convention',
   tagline: 'Coding Standards And Convention Documentation',
@@ -87,6 +88,7 @@ module.exports = {
           homePageId: 'doc1',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          remarkPlugins: [remarkLinks],
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },

@@ -18,13 +18,19 @@ sidebar_label: Project Structure
         + :file_folder: service
         + :file_folder: config
     - :file_folder: tests
-        + test of projects
+        + :file_folder: test of projects
+        + :memo: conftest.py
     - :memo: LICENSE (**OPTIONAL**)
     - :memo: README (can be `md` or `rst`)
     - Other configurable from third parties (**OPTIONAL**) such as tox.ini
 
 
++ **There can be cases where MVC folder structure as well as framework related folder structure can be used.** 
+    - The framework recommended structure shoudl be followed in such case.
++ The OOP style cases of class as filename structue is not always necessary but can be used if needed.
+
+
 
 ##### Template Generation: 
-* Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/){:target="_blank"} tool for template generation.
-    - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/){:target="_blank"}
+* Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) tool for template generation.
+    - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/)

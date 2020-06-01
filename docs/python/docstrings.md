@@ -139,6 +139,7 @@ The developers should add docstrings in the following locations
 - At the beginning of every class
 - After each function declaration
 - At the beginning of the `__init__.py` file for Module/Package documentation
+- In their tests to describe what they are testing.
 
 ### What to not miss
 
@@ -155,9 +156,9 @@ to check that your docstrings render correctly
 
 ### Checking Docstring coverage
 
-If you want to check docstring coverage in your project. Try interrogate (example below)
+- Use [pycodestyle](https://pycodestyle.pycqa.org/en/latest/) for linting your code against docstrings. When using `flake8`, [this](https://gitlab.com/pycqa/flake8-docstrings) plugin can be used.
+- [interrogate](https://interrogate.readthedocs.io/en/latest/) (example below) is **recommended** to use for docstring coverage in the code.
 
-- [interrogate](https://interrogate.readthedocs.io/en/latest/)
 
 ```
 
@@ -547,7 +548,3 @@ Thanks to the following
 - [Documenting in Python - DevGuide](https://devguide.python.org/documenting/)
 - [daouzli - stackoverflow](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)
 - [interrogate](https://interrogate.readthedocs.io/en/latest/)
-
-
-
- 

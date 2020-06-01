@@ -21,7 +21,8 @@ module.exports =
       "python/exceptions",
       "python/logging",
       "python/environment_and_dependency",
-      "python/project_structure"
+      "python/project_structure",
+      "python/testing"
     ],
     "Naming Convention": [
       "files",
