@@ -15,6 +15,7 @@ module.exports =
           "python/classes"
         ]
       },
+      "python/docstrings",
       "python/tools",
       "python/general",
       "python/exceptions",
