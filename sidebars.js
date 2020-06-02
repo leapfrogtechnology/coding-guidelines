@@ -26,12 +26,10 @@ module.exports =
         "label": "Naming Convention",
         "items": [
           "java/packages",
-          "java/files",
           "java/classes",
           "java/interfaces",
           "java/variables",
           "java/functions"
-          
         ]
       }
     ],
