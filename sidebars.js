@@ -7,8 +7,14 @@ module.exports =
     "Python": [
       "python/environment_and_dependency",
       "python/project_structure",
-      "python/general",
-      "python/tools",
+      {
+        "type": "category",
+        "label": "Practices and Tools",
+        "items": [
+            "python/general",
+            "python/tools"
+        ]
+      }, 
       "python/docstrings",
       {
         "type": "category",
