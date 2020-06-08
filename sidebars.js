@@ -5,6 +5,11 @@ module.exports =
       "introduction"
     ],
     "Python": [
+      "python/environment_and_dependency",
+      "python/project_structure",
+      "python/general",
+      "python/tools",
+      "python/docstrings",
       {
         "type": "category",
         "label": "Naming Convention",
@@ -15,13 +20,8 @@ module.exports =
           "python/classes"
         ]
       },
-      "python/docstrings",
-      "python/tools",
-      "python/general",
       "python/exceptions",
       "python/logging",
-      "python/environment_and_dependency",
-      "python/project_structure",
       "python/testing"
     ],
     "Naming Convention": [

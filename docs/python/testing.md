@@ -1,6 +1,6 @@
 ---
 id: testing
-title: Testing in `python`
+title: Testing in python
 sidebar_label: Testing
 ---
 
