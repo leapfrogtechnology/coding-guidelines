@@ -7,4 +7,7 @@ sidebar_label: Branching Naming Convention
 #### The following convention should be followed:
 
 * Branch name should exactly match with the corresponding jIRA ticket that you will be working on. 
-     `eg: <project-name>-<ticket-number>`
+     `<project-name>-<ticket-number>`
+     * eg:  
+          * FHF-100
+          * DEL-200
