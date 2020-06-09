@@ -31,6 +31,13 @@ module.exports =
           "java/variables",
           "java/functions"
         ]
+      },
+      {
+        "type": "category",
+        "label": "Effective Java",
+        "items": [
+          "java/effective-java"
+        ]
       }
     ],
     "Naming Convention": [
