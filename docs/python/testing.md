@@ -13,7 +13,7 @@ sidebar_label: Testing
 * `tox` and `nox` are vey good tools especially for CI and multiple version tests.
 * `hypothesis` and `mock` can be used for faking data and property testing.
 * Testing should be broken to `unit` as well as `functional`.
-* Use `coverage` to alert yourself of test coverage.
+* Use `coverage` to alert yourself of test coverage. Keep a target of **80 % - 90 %** coverage if **100%** is not achieved.  
 * Only test the changes you made or functionality you added when testing a codebase of well known frameworks.
 * `selenium` as well as `webtest` can be used for web based API testing.
 * `jsonschema` and `genson` like tool can be used for JSON validity.

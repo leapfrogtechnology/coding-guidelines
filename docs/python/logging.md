@@ -13,8 +13,8 @@ sidebar_label: Logging Convention
     - **WARN**: log user security and other warnings that may require attention or may need to be avoided.
     - **ERROR**: errors in programs.
     - **CRITICAL**: blocking issues or immediate attention issues.
-* **ERROR and CRITICAL** levels should be mitigated and informed.
 * `logger` is used for naming single logger object. Use `NAME_logger` name for more than one logger when required.
 * It is singleton and single threaded by default for given name of the logger. Can be [non-blocking](https://docs.python.org/3/howto/logging-cookbook.html#dealing-with-handlers-that-block) if required.
-* [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html) for reference.
-* Always use `exception` method rather than `error` method of `logger` object to log traceback when catching exceptions.
+* See [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html) for reference.
+* **ERROR and CRITICAL** levels should be mitigated and informed.
+    - Always use `exception` method rather than `error` method of `logger` object to log traceback when catching exceptions.

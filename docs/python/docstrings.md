@@ -32,7 +32,7 @@ may simply be construed as a comment
 
 To illustrate this try the following in the python console
 
-```python3
+```python
 class Test: 
    """This is a class docstring 
    """ 
@@ -48,28 +48,28 @@ class Test:
 ```
 
 
-```python3
+```python
 > print(Test.__doc___)
 This is a class docstring
 >
 > print(Test.example_method.__doc__)
 This is a method docstring
 >
-> print(Test.example_method_2.__doc__
+> print(Test.example_method_2.__doc__)
 None
 ```
 
 As you can see from the examples above, docstrings get 
 attached to the `__doc__` property of the code itself whereas, 
-the comments do not
+the comments do not.
 
 
 ### Usage of docstrings
 
 From the console, you can use docstrings to an overview of 
-code as follows
+code as follows:
 
-```python3
+```python
 > help(Test)
 Help on class Test in module __main__:
 
@@ -87,7 +87,9 @@ class Test(builtins.object)
 ```
 
 If a docstring is provided, you can get more readable
-information about python code
+information about python code. 
+
+** They are also used by your IDE to give you information while developing.**
 
 Furthermore, there are tools that can take this to the
 next level by creating a static website of documentation
@@ -122,12 +124,11 @@ template for consistency and also for libraries to be able to
 parse your docstring easily.
 
 The official documentation standard for Python is ReStructed Text docstrings ([PEP 287](https://www.python.org/dev/peps/pep-0287/)). 
-However, Google docstrings have been widely accepted by the community as such we recommend it. 
-If you're using using Numpy related libraries, it is better
-to use Numpy Docstrings
+However, Google docstrings have been widely accepted by the community as such we recommend it as we find it more readable and pythonic.
+If you're using using Numpy related libraries, you should be using Numpy Docstrings
 
-- [reStructured Text Docstrings](http://docutils.sourceforge.net/rst.html)
 - [Google docstrings](https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings) (**Recommended**)
+- [reStructured Text Docstrings](http://docutils.sourceforge.net/rst.html) (Seen in many inbuilt python libraries.)
 - [Numpy Docstrings](https://numpydoc.readthedocs.io/en/latest/format.html) (**Recommended for AI projects**)
 
 
@@ -193,7 +194,7 @@ to check that your docstrings render correctly
 
 ### Google Docstrings (recommended)
 
-```python3
+```python
 
 """Example Google style docstrings.
 
@@ -496,9 +497,12 @@ class ExampleClass:
 
 ### ReStructured Text Doc strings
 
-Here are few examples of docstrings to get you started
+You can see this kind of docstring especially in python libraries. 
+Please use **Google** style as they are more readable.
 
-```python3
+##### Examples:
+
+```python
 """The method below prints a given string twice
 
 The print method has been called twice for 
@@ -514,12 +518,8 @@ def print_twice(param1):
     print(param1)
     
     return len(param1)
-```
 
-The following shows type definition on the same line. 
-
-```python3
-"""The method below prints a given string twice
+"""The method below prints a given string twice. This is for type annotation.
 
 The print method has been called twice for 
 implementing this method
@@ -528,11 +528,82 @@ implementing this method
 :return: Length of the input string
 :rtype: int
 """
-def print_twice(param1):
+def print_twice(param1: str) -> int:
     print(param1)
     print(param1)
     
     return len(param1)
+```
+
+## Doctests
+:::caution
+While this should not be used for all checks and [testing](testing.md) should be followed. They can be used for simple parameter checking. i.e. some default case like module level doctest in example below. 
+
+They can be used with [pytest](https://docs.pytest.org/en/latest/doctest.html) as well.
+:::
+
+Python provides tests through docstrings which can be leveraged by [doctests](https://docs.python.org/3/library/doctest.html).
+
+Example
+```python
+"""
+This is the "example" module.
+
+The example module supplies one function, factorial().  For example,
+
+>>> factorial(5)
+120
+"""
+
+def factorial(n):
+    """Return the factorial of n, an exact integer >= 0.
+
+    >>> [factorial(n) for n in range(6)]
+    [1, 1, 2, 6, 24, 120]
+    >>> factorial(30)
+    265252859812191058636308480000000
+    >>> factorial(-1)
+    Traceback (most recent call last):
+        ...
+    ValueError: n must be >= 0
+
+    Factorials of floats are OK, but the float must be an exact integer:
+    >>> factorial(30.1)
+    Traceback (most recent call last):
+        ...
+    ValueError: n must be exact integer
+    >>> factorial(30.0)
+    265252859812191058636308480000000
+
+    It must also not be ridiculously large:
+    >>> factorial(1e100)
+    Traceback (most recent call last):
+        ...
+    OverflowError: n too large
+    """
+
+    import math
+    if not n >= 0:
+        raise ValueError("n must be >= 0")
+    if math.floor(n) != n:
+        raise ValueError("n must be exact integer")
+    if n+1 == n:  # catch a value like 1e300
+        raise OverflowError("n too large")
+    result = 1
+    factor = 2
+    while factor <= n:
+        result *= factor
+        factor += 1
+    return result
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+```
+This can be tested with:
+```
+$python example.py -v
 ```
 
 ## References

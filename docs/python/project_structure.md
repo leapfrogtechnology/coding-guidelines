@@ -4,7 +4,7 @@ title: Project Structure and Templates
 sidebar_label: Project Structure
 ---
 
-### The following folder structure should be used for projects:
+#### The following folder structure should be used for projects:
 
 
 * :file_folder: Project Root:
@@ -24,13 +24,13 @@ sidebar_label: Project Structure
     - :memo: README (can be `md` or `rst`)
     - Other configurable from third parties (**OPTIONAL**) such as tox.ini
 
-
+:::note
 + **There can be cases where MVC folder structure as well as framework related folder structure can be used.** 
-    - The framework recommended structure shoudl be followed in such case.
-+ The OOP style cases of class as filename structue is not always necessary but can be used if needed.
+    - The framework recommended structure should be followed in such case.
++ The OOP style cases of class as filename structue is not always necessary or recommended but can be used if needed.
+:::
 
 
-
-##### Template Generation: 
+### Project Template Generation Tool 
 * Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) tool for template generation.
     - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/)

@@ -14,7 +14,7 @@ sidebar_label: Functions
 * `decorators` should be named in function convention.
 
 
-```
+```python
 def get_db_connection(username, db_name):
     return connection
     
