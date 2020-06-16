@@ -31,7 +31,8 @@ module.exports =
           "java/variables",
           "java/functions"
         ]
-      }
+      },
+      "java/logging"   
     ],
     "Naming Convention": [
       "files",
