@@ -4,7 +4,7 @@ title: Testing in python
 sidebar_label: Testing
 ---
 
-### Test is integral part of sofware quality and should not be missed.
+#### Test is integral part of sofware quality and should not be missed.
 
 
 
@@ -19,3 +19,7 @@ sidebar_label: Testing
 * `jsonschema` and `genson` like tool can be used for JSON validity.
 * Always confirm the `schema` when testing Web API response data.
 * Passing tests for `merge` should be priority for all projects.
+* Tests should always cover:
+    + **Unit**: for you code units. Please use `mock` for external dependency and side effects.
+    + **Functional**: You program functionality.
+    + **Integration**: Your whole program integration.

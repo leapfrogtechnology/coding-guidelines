@@ -157,7 +157,7 @@ to check that your docstrings render correctly
 
 ### Checking Docstring coverage
 
-- Use [pycodestyle](https://pycodestyle.pycqa.org/en/latest/) for linting your code against docstrings. When using `flake8`, [this](https://gitlab.com/pycqa/flake8-docstrings) plugin can be used.
+- Use [pydocstyle](https://pydocstyle.pycqa.org/en/latest/) for linting your code against docstrings. When using `flake8`, [this](https://gitlab.com/pycqa/flake8-docstrings) plugin can be used.
 - [interrogate](https://interrogate.readthedocs.io/en/latest/) (example below) is **recommended** to use for docstring coverage in the code.
 
 
