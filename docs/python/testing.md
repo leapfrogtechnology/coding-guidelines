@@ -20,6 +20,6 @@ sidebar_label: Testing
 * Always confirm the `schema` when testing Web API response data.
 * Passing tests for `merge` should be priority for all projects.
 * Tests should always cover:
-    + **Unit**: for you code units. Please use `mock` for external dependency and side effects.
-    + **Functional**: You program functionality.
+    + **Unit**: for your code units. Please use `mock` for external dependency and side effects.
+    + **Functional**: Your program functionality.
     + **Integration**: Your whole program integration.

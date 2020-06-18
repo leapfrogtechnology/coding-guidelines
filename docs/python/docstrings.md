@@ -190,9 +190,9 @@ to check that your docstrings render correctly
 
 
 
-## Examples
+### Examples
 
-### Google Docstrings (recommended)
+#### Google Docstrings (recommended)
 
 ```python
 
@@ -495,12 +495,10 @@ class ExampleClass:
         
 ```
 
-### ReStructured Text Doc strings
+#### ReStructured Text Doc strings
 
 You can see this kind of docstring especially in python libraries. 
 Please use **Google** style as they are more readable.
-
-##### Examples:
 
 ```python
 """The method below prints a given string twice
@@ -606,7 +604,7 @@ This can be tested with:
 $python example.py -v
 ```
 
-## References
+### References
 
 Thanks to the following
 
