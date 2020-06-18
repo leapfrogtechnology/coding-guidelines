@@ -21,4 +21,4 @@ sidebar_label: Environment Isolation and Dependency Management
 
 * [poetry](https://python-poetry.org/) is recommended as it handles dependency as well as build system.
 * You can use `setuptools` and `setup.py` as well for requirements handling through `requires`. They **must** be used for install-able modules.
-* `requirements.txt`  style should not be avoided.
+* `requirements.txt`  style should be avoided although you may come across this style a lot.
