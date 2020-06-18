@@ -11,9 +11,17 @@ sidebar_label: Project Structure
     - :memo: pyproject.toml (can be requirements.txt and setup.py)
     - :file_folder: docs
         * Your documentation
-    - :file_folder: data
+    - :file_folder: data (**OPTIONAL**)
         * Data for project.
-    - :file_folder: {PROJECT_NAME}
+        
+:::tip
+* This folder structure can be used as well. It will have **src** folder for more descriptive stature. 
+    + :file_folder: src
+        - :file_folder: {PROJECT_NAME}
+
+:::
+*
+    - :file_folder: {PROJECT_NAME} 
         + :file_folder: utils
         + :file_folder: service
         + :file_folder: config
@@ -22,7 +30,7 @@ sidebar_label: Project Structure
         + :memo: conftest.py
     - :memo: LICENSE (**OPTIONAL**)
     - :memo: README (can be `md` or `rst`)
-    - Other configurable from third parties (**OPTIONAL**) such as tox.ini
+    - :file_folder: :memo: Other configurable from third parties (**OPTIONAL**) such as tox.ini
 
 :::note
 + **There can be cases where MVC folder structure as well as framework related folder structure can be used.** 
