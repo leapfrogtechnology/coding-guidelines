@@ -10,6 +10,10 @@ Use **GET requests** to retrieve resource representation/information only – an
 > * **/employees/{employee-id}/leaves**
 > * **/employees/{employee-id}/employee-reports**
 
+Use query params to filter response or get subset or limited resource.
+
+> * **/employees/{employee-id}/leaves?type={leave-type}&order-by={leave-date}**
+
 |  Response code            |  Result/Reason |
 |---------------------------|------------------------------|
 |200 OK                     | Sucessfully Fetched the Enity. <br/> Must include a response body. |
