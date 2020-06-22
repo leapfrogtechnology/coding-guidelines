@@ -12,6 +12,7 @@ Smart commits allows a team to perform actions on Jira issues from a single comm
 * `#time` : Records time tracking information against a Jira issue.
 * `#<transition-name>` :  Moves the Jira issue to a particular workflow state.
 
-eg: 
-* `git commit -m "TEST-34 #time 1w 2d 4h 30m Total work logged"`.
-* `TEST-101 #time 4h 30m Fix null pointers #comment Fixed code #resolve`
+#### Examples:
+
+    - git commit -m "FHF-34 #time 1w 2d 4h 30m Total work logged".
+    - DEL-101 #time 4h 30m Fix null pointers #comment Fixed code #resolve

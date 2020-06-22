@@ -1,10 +1,10 @@
 ---
-id: code_reviewe_checklist
+id: code_review_checklist
 title: Code Review Checklist
 sidebar_label: Code Review Checklist
 ---
 
-Smart commits allows a team to perform actions on Jira issues from a single commit.  Users can enter the issue key and the desired action such as time tracking or closing an issue.
+Smart commits allows a team to perform actions on JIRA issues from a single commit. Users can enter the issue key and the desired action such as time tracking or closing an issue.
 
 #### List:
 
@@ -18,7 +18,6 @@ Smart commits allows a team to perform actions on Jira issues from a single comm
 * Repetitive code has been factored out
 * Frameworks have been used appropriately – methods have all been defined appropriately
 * Command classes have been designed to undertake one task only
-* JSPs do not contain business logic
 * Unit tests are present and correct
 * Common errors have been checked for
 * Potential threading issues have been eliminated where possible
@@ -29,7 +28,6 @@ Smart commits allows a team to perform actions on Jira issues from a single comm
 * The code does not use unjustifiable static methods/blocks
 * The code complies to coding standards
 * Logging used appropriately (proper logging level and details)
-* NPEs and AIOBs
 * The code does not reinvent the wheel
 * The code does not have any side effect on existing functionality
 
