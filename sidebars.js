@@ -10,6 +10,7 @@ module.exports =
         "type": "category",
         "label": "Methods",
         "items": [
+          "rest-api/naming-convention",
           "rest-api/get",
           "rest-api/post",
           "rest-api/put",
