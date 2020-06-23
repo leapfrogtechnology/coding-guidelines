@@ -32,8 +32,8 @@ sidebar_label: Project Structure
 :::
 *
     - :file_folder: {PROJECT_NAME}
-        + :memo: __init__.py
-        + :memo: __main__.py (**OPTIONAL**)
+        + :memo: `__init__.py`
+        + :memo: `__main__.py` (**OPTIONAL**) => for calling with `python -m`
         + :file_folder: utils
         + :file_folder: service
         + :file_folder: config
