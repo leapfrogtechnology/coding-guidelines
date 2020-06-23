@@ -51,7 +51,7 @@ sidebar_label: Project Structure
 :::
 
 
-### Project Template Generation Tool 
+### Project Template 
 * [Python Package Authority Sample](https://github.com/pypa/sampleproject) can be used as bootstrap.
 * Look into [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) tool for template generation.
-    - [List of templates for cookiecutter](http://cookiecutter-templates.sebastianruml.name/)
+    - [List of templates for cookiecutter.](http://cookiecutter-templates.sebastianruml.name/)
