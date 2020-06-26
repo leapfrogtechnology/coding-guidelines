@@ -23,7 +23,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/leapfrogtechnology/coding-guidelines',
           label: 'GitHub',
           position: 'right',
         },
@@ -90,7 +90,7 @@ module.exports = {
           // Please change this to your repo.
           remarkPlugins: [remarkLinks],
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/leapfrogtechnology/coding-guidelines/edit/develop/',
         },
         blog: {
           showReadingTime: true,
