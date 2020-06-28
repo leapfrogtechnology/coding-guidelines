@@ -30,8 +30,10 @@ module.exports =
           "java/interfaces",
           "java/variables",
           "java/functions"
-        ]
+        ], 
       },
+      "java/logging",
+      "java/tools",
       {
         "type": "category",
         "label": "Effective Java",
