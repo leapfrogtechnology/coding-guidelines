@@ -4,6 +4,52 @@ module.exports =
     "Overview": [
       "introduction"
     ],
+    "Python": [
+      {
+        "type": "category",
+        "label": "Naming Convention",
+        "items": [
+          "python/files",
+          "python/variables",
+          "python/functions",
+          "python/classes"
+        ]
+      },
+      "python/tools",
+      "python/general",
+      "python/environment_and_dependency",
+      "python/project_structure"
+    ],
+    "Java": [
+      {
+        "type": "category",
+        "label": "Naming Convention",
+        "items": [
+          "java/packages",
+          "java/classes",
+          "java/interfaces",
+          "java/variables",
+          "java/functions"
+        ], 
+      },
+      "java/logging",
+      "java/tools",
+      {
+        "type": "category",
+        "label": "Effective Java",
+        "items": [
+          "java/effective-java"
+        ]
+      }
+    ],
+    "Naming Convention": [
+      "files",
+      "classes",
+      "functions",
+      "variables",
+      "constants",
+      "folders"
+    ],
     "REST API": [
       "rest-api/headers",
       {
@@ -35,7 +81,6 @@ module.exports =
       },
       "git/pull_request_best_pratices",
       "git/code_review_checklist"
-    ],
-    "Naming Convention": ["files", "classes", "functions", "variables", "constants", "folders"]
+    ]
   }
 }
