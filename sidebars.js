@@ -2,7 +2,8 @@ module.exports =
 {
   "docs": {
     "Overview": [
-      "introduction"
+      "introduction",
+      "general-guidelines"
     ],
     "REST API": [
       "rest-api/headers",
