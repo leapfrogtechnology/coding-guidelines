@@ -114,7 +114,7 @@ title: General Coding Standards
     Good function names: **getPersonList, fetchUsers, getCurrentUser, removeTodoItems, initialize, clear, flush, activate, isActive(), shouldNotify()**
     Bad function names are those that isn't meaningful to the task it does.
 
-* A function should do one thing and should be named accordingly. SRP(Single Responsibility Principle) also applies here. If you have broken down the function following SRP then there won't be a function such as: getUserByIdAndActivateItAndLogin, checkPeopleAndArchiveThem.
+  * A function should do one thing and should be named accordingly. **SRP(Single Responsibility Principle)** also applies here. If you have broken down the function following SRP then there won't be a function such as: **getUserByIdAndActivateItAndLogin**, **checkPeopleAndArchiveThem** (bad practice).
 
 * All the releases should be properly tagged in git.
 
