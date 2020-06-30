@@ -1,5 +1,5 @@
 ---
-id: branching_strategy
+id: branching-strategy
 title: Branching Strategy
 sidebar_label: Branching Strategy
 ---

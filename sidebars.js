@@ -25,9 +25,9 @@ module.exports =
       "rest-api/hateaos"
     ],
     "Github": [
-      "git/branch_naming_convention",
-      "git/branching_strategy",
-      "git/smart_commit",
+      "git/branch-naming-convention",
+      "git/branching-strategy",
+      "git/smart-commit",
       {
         "type": "category",
         "label": "Release Management",
@@ -35,8 +35,8 @@ module.exports =
           "git/tagging"
         ]
       },
-      "git/pull_request_best_pratices",
-      "git/code_review_checklist"
+      "git/pull-request-best-pratices",
+      "git/code-review-checklist"
     ],
     "Python": [
       "python/environment-and-dependency",

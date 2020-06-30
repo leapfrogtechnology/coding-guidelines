@@ -1,5 +1,5 @@
 ---
-id: code_review_checklist
+id: code-review-checklist
 title: Code Review Checklist
 sidebar_label: Code Review Checklist
 ---
