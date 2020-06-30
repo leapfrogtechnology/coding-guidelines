@@ -1,6 +1,6 @@
 ---
 id: security
-title: Security Method
+title: Security 
 sidebar_label: Security
 ---
 

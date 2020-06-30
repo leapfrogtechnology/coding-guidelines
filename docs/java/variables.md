@@ -17,9 +17,10 @@ sidebar_label: Variables
   
 * Variable name should be plural if that is a collections. for e.g **employees**, **leaves** represents a list.
 
-* Variables names should be declared as per their types 
+* Variables names should be declared as per their types
   * Map/KeyValue pair should be declared as *keyToValue* and *valueByKey*. For e.g **ageByName** or  **nameToAge**.
   * Set can be prefixed as *unique* before variable names. For e.g **uniqueNames**
+  * Boolean can be prefixed as **is/are/has** e.g. **isVisible**, **isEligible**, **hasMaximumAmount**
 
 * Instance variable should be camelCase of their class names.
   * employeeService is an instance of EmployeeService.

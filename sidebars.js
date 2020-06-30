@@ -54,6 +54,26 @@ module.exports =
       "python/environment_and_dependency",
       "python/project_structure"
     ],
+    "JavaScript": [
+      {
+        "type": "category",
+        "label": "Naming Convention",
+        "items": [
+          "javascript/files",
+          "javascript/variables",
+          "javascript/functions",
+          "javascript/classes"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "General Coding Guidelines",
+        "items": [
+          "javascript/js-general-guidelines",
+          "javascript/ts-general-guidelines"
+        ]
+      }
+    ],
     "Java": [
       {
         "type": "category",
