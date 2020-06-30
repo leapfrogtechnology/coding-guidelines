@@ -1,5 +1,5 @@
 ---
-id: environment_and_dependency
+id: environment-and-dependency
 title: Environment Isolation and Dependency Management
 sidebar_label: Environment Isolation and Dependency Management
 ---

@@ -1,5 +1,5 @@
 ---
-id: project_structure
+id: project-structure
 title: Project Structure and Templates
 sidebar_label: Project Structure
 ---
