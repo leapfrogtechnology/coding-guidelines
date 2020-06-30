@@ -15,13 +15,6 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
           href: 'https://github.com/leapfrogtechnology/coding-guidelines',
           label: 'GitHub',
           position: 'right',
@@ -32,33 +25,16 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/lftechnology/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              label: 'Instagram',
+              href: 'https://www.instagram.com/lftechnology/',
+            }
           ],
         },
         {
@@ -66,7 +42,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: 'https://www.lftechnology.com/blog/',
             },
             {
               label: 'GitHub',
