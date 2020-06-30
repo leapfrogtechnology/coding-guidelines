@@ -59,7 +59,6 @@ module.exports =
         "type": "category",
         "label": "Naming Convention",
         "items": [
-          "javascript/files",
           "javascript/variables",
           "javascript/functions",
           "javascript/classes"
