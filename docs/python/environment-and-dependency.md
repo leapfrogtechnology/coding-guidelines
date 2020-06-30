@@ -1,12 +1,12 @@
 ---
-id: environment_and_dependency
+id: environment-and-dependency
 title: Environment Isolation and Dependency Management
 sidebar_label: Environment Isolation and Dependency Management
 ---
 
 #### Information on development environment and dependency:
 
-##### Environment Isolation:
+### Environment Isolation:
 
 * System installed `python` should never be used for development. Isolate your development.
 * Any of the following can be used for python isolation:
@@ -17,8 +17,8 @@ sidebar_label: Environment Isolation and Dependency Management
 
 
 
-##### Dependency Management:
+### Dependency Management:
 
-* [poetry](https://python-poetry.org/) is recommended.
-    - If not `poetry` use `pip` with `requirements.txt`
-* You can use `setuptools` and `setup.py` as well for requirements handling. They **must** be used for installable modules.
+* [poetry](https://python-poetry.org/) is recommended as it handles dependency as well as build system.
+* You can use `setuptools` and `setup.py` as well for requirements handling through `requires`. They **must** be used for install-able modules.
+* `requirements.txt`  style should be avoided although you may come across this style a lot.

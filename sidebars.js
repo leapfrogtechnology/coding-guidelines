@@ -39,6 +39,17 @@ module.exports =
       "git/code_review_checklist"
     ],
     "Python": [
+      "python/environment-and-dependency",
+      "python/project-structure",
+      {
+        "type": "category",
+        "label": "Practices and Tools",
+        "items": [
+            "python/general",
+            "python/tools"
+        ]
+      }, 
+      "python/docstrings",
       {
         "type": "category",
         "label": "Naming Convention",
@@ -49,10 +60,9 @@ module.exports =
           "python/classes"
         ]
       },
-      "python/tools",
-      "python/general",
-      "python/environment_and_dependency",
-      "python/project_structure"
+      "python/exceptions",
+      "python/logging",
+      "python/testing"
     ],
     "JavaScript": [
       {

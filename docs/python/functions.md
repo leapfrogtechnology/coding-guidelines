@@ -12,3 +12,21 @@ sidebar_label: Functions
 * for bound methods in class `self` should be used for first argument.
 * for class methods in class `cls` should be used for first argument.
 * `decorators` should be named in function convention.
+
+
+```python
+def get_db_connection(username, db_name):
+    return connection
+    
+#method
+
+def get_db_connection(self, username, db_name):
+    return connection
+    
+
+# classmethod
+@classmethod
+def multiple_param_initializer(cls, cls_param):
+    return cls(cls_param)
+    
+```
