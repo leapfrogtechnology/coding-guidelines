@@ -1,5 +1,5 @@
 ---
-id: smart_commit
+id: smart-commit
 title: Smart Commit
 sidebar_label: Smart Commit
 ---

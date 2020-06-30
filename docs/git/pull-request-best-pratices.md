@@ -1,5 +1,5 @@
 ---
-id: pull_request_best_pratices
+id: pull-request-best-pratices
 title: Pull Request Best Practices
 sidebar_label: Pull Request Best Practices
 ---

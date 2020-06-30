@@ -1,5 +1,5 @@
 ---
-id: branch_naming_convention
+id: branch-naming-convention
 title: Branch Naming Convention
 sidebar_label: Branch Naming Convention
 ---
