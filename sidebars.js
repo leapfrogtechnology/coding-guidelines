@@ -2,7 +2,6 @@ module.exports =
 {
   "docs": {
     "Overview": [
-      "introduction",
       "general/guidelines",
       "general/clean-code"
     ],
