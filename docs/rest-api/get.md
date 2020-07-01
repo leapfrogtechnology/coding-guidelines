@@ -4,15 +4,82 @@ title: Get Method
 sidebar_label: Get
 ---
 
+
+### Introduction
+
 Use **GET requests** to retrieve resource representation/information only – and not to modify it in any way. As GET requests do not change the state of the resource, these are said to be safe methods. Additionally, GET APIs should be **idempotent**, which means that making multiple identical requests must produce the same result every time until another API (POST/PUT/PATCH/DELETE) has changed the state of the resource on the server.
+
+* **Avoid using request body in GET request**
+
+* Use `path params` instead of `query params` if its a must value to process a request. This way we can reduce unnucessary validation checks.
+
+* Use `query params` to filter response or get subset or limited resource.
+
+### URL Example
 
 > * **/employees**
 > * **/employees/{employee-id}/leaves**
 > * **/employees/{employee-id}/employee-reports**
-
-Use query params to filter response or get subset or limited resource.
-
 > * **/employees/{employee-id}/leaves?type={leave-type}&order-by={leave-date}**
+
+### Success Response Body
+
+* Expecting a single resource [**/employees/1**]
+
+```yaml
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@xyz.com",
+    "address": "123 Mockingbird Lane",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001"
+  }
+ ```
+
+* Expecting collection resource [**/employees**]
+
+```yaml
+  [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@xyz.com",
+      "address": "123 Mockingbird Lane",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    {
+      "id": 2,
+      "name": "William",
+      "email": "will@xyz.com",
+      "address": "123 Mockingbird Lane",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    }
+  ]
+```
+
+### Error Response Body
+
+```yaml
+  {
+    "error": "Invalid payoad.",
+    "detail": {
+      "name": "This field is required."
+    }
+  }
+
+```
+
+### Response Header
+
+Specify `Content-type` header, and its should be `application/json` while returing json response, `application/xml` while returning xml response and so on.
+
+### Response code and Results
 
 |  Response code            |  Result/Reason |
 |---------------------------|------------------------------|

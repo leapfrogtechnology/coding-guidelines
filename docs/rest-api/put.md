@@ -9,6 +9,100 @@ Use **PUT** APIs primarily to update existing resource (if the resource does not
 > * **/employees/{employee-id}**
 > * **/departments/{department-id}**
 
+### Request Body
+
+* Updating a single resource [**/employees/1**]
+
+```yaml
+  {
+    "id":"1",
+    "name": "John Doe",
+    "email": "johndoe@xyz.com",
+    "address": "123 Mockingbird Lane",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001"
+  }
+ ```
+
+* Creating collection resource [**/employees**]
+
+```yaml
+  [
+    {
+      "id":"1",
+      "name": "John Doe",
+      "email": "johndoe@xyz.com",
+      "address": "123 Mockingbird Lane",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    {
+      "id":"2",
+      "name": "William",
+      "email": "will@xyz.com",
+      "address": "123 Mockingbird Lane",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    }
+  ]
+```
+
+### Response Body
+
+* Updating a single resource [**/employees**]
+
+```yaml
+  {
+    "id":"1",
+    "name": "John Doe",
+    "email": "johndoe@xyz.com",
+    "address": "123 Mockingbird Lane",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001"
+  }
+ ```
+
+* Updating collection resource [**/employees**]
+
+```yaml
+  [
+    {
+      "id":"1",
+      "name": "John Doe",
+      "email": "johndoe@xyz.com",
+      "address": "123 Mockingbird Lane",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    {
+      "id":"2",
+      "name": "William",
+      "email": "will@xyz.com",
+      "address": "123 Mockingbird Lane",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    }
+  ]
+```
+
+### Error Response Body
+
+```yaml
+  {
+    "error": "Invalid payoad.",
+    "detail": {
+      "name": "This field is required."
+    }
+  }
+
+```
+
 |  Response code            |  Result/Reason |
 |---------------------------|------------------------------|
 |200 OK                     | Sucessfully updated the Enity. <br/> Must include a response body. |

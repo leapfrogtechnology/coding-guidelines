@@ -21,8 +21,7 @@ module.exports =
         ]
       },
       "rest-api/security",
-      "rest-api/versioning",
-      "rest-api/hateaos"
+      "rest-api/versioning"
     ],
     "Github": [
       "git/branch-naming-convention",
