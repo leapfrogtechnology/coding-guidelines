@@ -77,7 +77,7 @@ Use **GET requests** to retrieve resource representation/information only – an
 
 ### Response Header
 
-Specify `Content-type` header, and its should be `application/json` while returing json response, `application/xml` while returning xml response and so on.
+Specify `Content-type` header, and it should be `application/json` while returing json response, `application/xml` while returning xml response and so on.
 
 ### Response code and Results
 
