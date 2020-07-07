@@ -2,7 +2,7 @@ module.exports =
 {
   "docs": {
     "Overview": [
-      "general/guidelines",
+      "introduction",
       "general/clean-code"
     ],
     "REST API": [
