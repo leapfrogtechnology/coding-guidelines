@@ -1,5 +1,5 @@
 ---
-id: guidelines
+id: introduction
 title: General Coding Standards
 ---
 
