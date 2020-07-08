@@ -1,16 +1,16 @@
 module.exports = {
-  title: 'Coding Standards And Convention',
-  tagline: 'Coding Standards And Convention Documentation',
-  url: 'https://lftechnology.com',
+  title: 'Coding Guidelines',
+  tagline: 'Leapfrog Coding Guidelines',
+  url: 'https://coding-guidelines.lftechnology.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'lftechnology', // Usually your GitHub org/user name.
-  projectName: 'coding standards and convention', // Usually your repo name.
+  projectName: 'coding-guidelines', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Coding Standard and Convention',
+      title: 'Coding Guidelines',
       logo: {
-        alt: '',
+        alt: 'Leapfrog Technology Logo',
         src: 'img/favicon.png',
       },
       links: [
@@ -51,7 +51,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Leapfrog Technology, Inc.`,
     },
   },
   presets: [
