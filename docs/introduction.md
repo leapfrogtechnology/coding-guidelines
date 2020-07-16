@@ -132,7 +132,7 @@ title: General Coding Standards
 
 * Sanity checklist document should be present.
 
-* Consistent Relational Operators usage:
+* Consistent Relational Operators:
 
   * Recommended to use either `>=` / `<=` or `>` / `<` relationals operators consistently in entire codebase.
 
