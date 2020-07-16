@@ -131,3 +131,11 @@ title: General Coding Standards
 * Follow Gitflow.
 
 * Sanity checklist document should be present.
+
+* Consistent Relational Operators usage:
+
+  * Recommended to use either `>=` / `<=` or `>` / `<` relationals operators consistently in entire codebase.
+
+  * Scenario: In front end, there are logics like `>=256 && <=512` and in other components/files or in backend  there is `>255 && <511`.
+
+  * Benefits: No high stress to human mind. Searching for those numbers in entire codebase will result accurate.
