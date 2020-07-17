@@ -134,7 +134,7 @@ title: General Coding Standards
 
 * Consistent Relational Operators:
 
-  * Recommended to use either `>=` / `<=` or `>` / `<` relationals operators consistently in entire codebase.
+  * Use relational operators either `>=` / `<=` or `>` / `<`  consistently in the entire codebase.
 
   * Scenario: In front end, there are logics like `>=256 && <=512` and in other components/files or in backend  there is `>255 && <511`.
 
