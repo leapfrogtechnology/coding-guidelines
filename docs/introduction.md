@@ -138,4 +138,4 @@ title: General Coding Standards
 
   * Example: In some places, there is `>=256 && <=512` and in other place there is `>255 && <511`.
 
-  * Benefits: No high stress to human mind. Searching for those numbers in entire codebase will result accurate.
+  * Why? Lesser cognitive burden, enforce consistency and avoid confusion. 
