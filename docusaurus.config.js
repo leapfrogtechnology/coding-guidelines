@@ -13,7 +13,7 @@ module.exports = {
         alt: 'Leapfrog Technology Logo',
         src: 'img/favicon.png',
       },
-      links: [
+      items: [
         {
           href: 'https://github.com/leapfrogtechnology/coding-guidelines',
           label: 'GitHub',
@@ -34,7 +34,7 @@ module.exports = {
             {
               label: 'Instagram',
               href: 'https://www.instagram.com/lftechnology/',
-            }
+            },
           ],
         },
         {
@@ -69,8 +69,9 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          routeBasePath : '/',
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          routeBasePath: '/',
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
