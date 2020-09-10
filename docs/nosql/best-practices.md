@@ -21,7 +21,7 @@ create separate collection.
 ### One to one relationship
 - When the relationship between two entities is one to one, then we can do for embedded document or keeping the child document inside the parent document.
     
-    Let's consider an example between `employee` and `address`, the `address` belongs to `employee` and is frequently retrieved along with employee infromation.
+    Let's consider an example between `employee` and `address`. The `address` belongs to `employee` and is frequently retrieved along with the employee information.
     ```
         {
             id: "1",
