@@ -102,6 +102,16 @@ module.exports =
           "java/effective-java"
         ]
       }
+    ],
+    "NoSQL" : [
+      {
+        "type": "category",
+        "label": "Document DB",
+        "items": [
+            "nosql/document-db-naming-convention",
+            "nosql/document-db-best-practices"
+        ]
+      }
     ]
   }
 }
