@@ -108,8 +108,10 @@ module.exports =
         "type": "category",
         "label": "Document DB",
         "items": [
-            "nosql/document-db-naming-convention",
-            "nosql/document-db-best-practices"
+            "nosql/documentdb/document-db-naming-convention",
+            "nosql/documentdb/one-to-one-relationship",
+            "nosql/documentdb/one-to-many-relationship",
+            "nosql/documentdb/many-to-many-relationship"
         ]
       }
     ]
