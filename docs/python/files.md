@@ -12,6 +12,6 @@ sidebar_label: Files, Folders & Modules
     - E.g. `aws_helper.py` will describe helper related to AWS.
 * Donot Clash names with inbuilt and famous modules.
     - E.g. donot use `requests.py` or `list.py`
-* Be consistent when you are naming. Go with one form when choosing singular or plural names. i.e. 
-    - `tools`, `utils` or `tool`, `util` but not `tools`, `util` combination.  
+* Be consistent when you are naming. Go with one form when choosing singular or plural names. i.e.
+    - `tools`, `utils` or `tool`, `util` but  not `tools`, `util` combination.
 * When designing OOP styled files, go for `abstract.py`, `base.py` or `parent.py` like files/folders for abstract classes.
