@@ -5,7 +5,7 @@ sidebar_label: One to One Relationship
 ---
 
 ### Defining a schema
-It is generally good practice to use a schema to validate the entity or contents of a document, although document DB is a schema-less database, which allows maximum flexibility in data structuring. 
+It is generally good practice to use a schema to validate the entity or contents of a document, although document DB is a schema-less database, which allows maximum flexibility in structuring data. 
 This will reduce writing defensive code and confirm the structure of your data in the database.
 There are various libraries that can validate json object against the predefined schema like
 [simpl-schema](https://www.npmjs.com/package/simpl-schema), [ajv](https://ajv.js.org/). 
