@@ -102,6 +102,18 @@ module.exports =
           "java/effective-java"
         ]
       }
+    ],
+    "NoSQL" : [
+      {
+        "type": "category",
+        "label": "Document DB",
+        "items": [
+            "nosql/documentdb/document-db-naming-convention",
+            "nosql/documentdb/one-to-one-relationship",
+            "nosql/documentdb/one-to-many-relationship",
+            "nosql/documentdb/many-to-many-relationship"
+        ]
+      }
     ]
   }
 }
