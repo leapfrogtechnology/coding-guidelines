@@ -16,8 +16,8 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
 
 - Embedding connected data in a single document can reduce the number of read operations required to obtain data. 
     In general, you should structure your schema so your application receives all of its required information in a single read operation.
-    If the number of embedded document(child documents) are limited to very less numbers then this can be better options.
-    For example, `User To Accounts`, `User To Addresses`, `Post To Comments`, can be modelled to embedded document pattern in one to many relationship.
+    If the number of embedded document(s)(child documents) are limited to fewer numbers then this can be better options.
+    For example, `User To Accounts`, `User To Addresses`, `Post To Comments`, can be modeled to embedded document pattern in one to many relationship.
     
     ```
         {
@@ -47,7 +47,7 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
 
     ```
   
- However, there are 3 potential problems associated with this approach that one should be aware off.
+ However, there are 3 potential problems associated with this approach that one should be aware of.
  :::caution
     - The embedded documents might grow larger and consequently growing main document size. NoSql DBs have limit on document size for example 16MB in case of Mongodb, 1 MB in case of google fire store.
     - This could result in slow write performance as the embedded documents grows significantly larger in number.
