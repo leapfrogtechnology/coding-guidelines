@@ -17,7 +17,7 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
 - Embedding connected data in a single document can reduce the number of read operations required to obtain data. 
     In general, you should structure your schema so your application receives all of its required information in a single read operation.
     If the number of embedded document(s)(child documents) are limited to fewer numbers then this can be better options.
-    For example, `User To Accounts`, `User To Addresses`, `Post To Comments`, can be modelled to embedded document pattern in one to many relationship.
+    For example, `User To Accounts`, `User To Addresses`, `Post To Comments`, can be modeled to embedded document pattern in one to many relationship.
     
     ```
         {
