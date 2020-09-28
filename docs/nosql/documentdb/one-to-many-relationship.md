@@ -75,7 +75,14 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
             ]
         }
 
-    ```
+    ```   
+:::info
+**When to use subset pattern**
+
+ Some cases when properties rarely changes, for example **name** , **dateOfBirth** etc , we can denormalize these properties across multiple collections.
+ In the above given example, **bank name** and **account number** will rarely changes and we can duplicate these properties across multiple collections to avoid
+ joins and faster fetch.
+:::
    
 ### Document references
 
