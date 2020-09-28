@@ -47,7 +47,7 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
 
     ```
   
- However, there are 3 potential problems associated with this approach that one should be aware off.
+ However, there are 3 potential problems associated with this approach that one should be aware of.
  :::caution
     - The embedded documents might grow larger and consequently growing main document size. NoSql DBs have limit on document size for example 16MB in case of Mongodb, 1 MB in case of google fire store.
     - This could result in slow write performance as the embedded documents grows significantly larger in number.
