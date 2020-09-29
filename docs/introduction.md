@@ -131,3 +131,11 @@ title: General Coding Standards
 * Follow Gitflow.
 
 * Sanity checklist document should be present.
+
+* Consistent Relational Operators:
+
+  * Use relational operators either `>=` / `<=` or `>` / `<`  consistently in the entire codebase.
+
+  * Example: In some places, there is `>=256 && <=512` and in other place there is `>255 && <511`.
+
+  * Why? Lesser cognitive burden, enforce consistency and avoid confusion. 
