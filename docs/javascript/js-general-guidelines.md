@@ -70,9 +70,29 @@ Apart from the eslint validation. Following should be taken care of.
 
 - Avoid having more than 3 parameters in a function.
 
+    If your function requires many parameters, send all the parameters as a single object instead.
+
+<!--Javascript-->
+
+    // Bad
+    function setInfo(userName, firstName, lastName, email, website, dob) {
+        ...
+    }
+
+    // Good
+    function setInfo({ userName, firstName, lastName, email, website, dob }) {
+        ...
+    }
+
+    // Good
+    function setInfo(info) {
+        const { userName, firstName, lastName, email, website, dob } = info;
+        ...
+    }
+
 - Break down or refactor code with complexity into multiple smaller functions.
 
-- Use **async/awai**t or Promises for async operation and avoid callback hells.
+- Use **async/await** or Promises for async operation and avoid callback hells.
 
 - DocBlocks – Add doc blocks for each and every function, to clearly mention what it does. Docblocks also should mention the parameter types or return types.
   
