@@ -45,7 +45,6 @@ class Test:
        pass
 ```
 
-
 ```python
 > print(Test.__doc___)
 This is a class docstring
@@ -60,7 +59,6 @@ None
 As you can see from the examples above, docstrings get
 attached to the `__doc__` property of the code itself whereas,
 the comments do not.
-
 
 ### Usage of docstrings
 
@@ -129,7 +127,6 @@ If you're using using Numpy related libraries, you should be using Numpy Docstri
 - [reStructured Text Docstrings](http://docutils.sourceforge.net/rst.html) (Seen in many inbuilt python libraries.)
 - [Numpy Docstrings](https://numpydoc.readthedocs.io/en/latest/format.html) (**Recommended for AI projects**)
 
-
 ### Where to add docstrings
 
 The developers should add docstrings in the following locations
@@ -158,9 +155,7 @@ to check that your docstrings render correctly
 - Use [pydocstyle](https://pydocstyle.pycqa.org/en/latest/) for linting your code against docstrings. When using `flake8`, [this](https://gitlab.com/pycqa/flake8-docstrings) plugin can be used.
 - [interrogate](https://interrogate.readthedocs.io/en/latest/) (example below) is **recommended** to use for docstring coverage in the code.
 
-
 ```
-
 ================== Coverage for /Users/lynn/dev/interrogate/ ====================
 ------------------------------------ Summary ------------------------------------
 | Name                                  |   Total |   Miss |   Cover |   Cover% |
@@ -185,8 +180,6 @@ to check that your docstrings render correctly
 ---------------- RESULT: PASSED (minimum: 80.0%, actual: 100.0%) ----------------
 
 ```
-
-
 
 ### Examples
 
@@ -532,6 +525,7 @@ def print_twice(param1: str) -> int:
 ```
 
 ## Doctests
+
 :::caution
 While this should not be used for all checks and [testing](testing.md) should be followed. They can be used for simple parameter checking. i.e. some default case like module level doctest in example below.
 
@@ -541,6 +535,7 @@ They can be used with [pytest](https://docs.pytest.org/en/latest/doctest.html) a
 Python provides tests through docstrings which can be leveraged by [doctests](https://docs.python.org/3/library/doctest.html).
 
 Example
+
 ```python
 """
 This is the "example" module.
@@ -597,15 +592,14 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod()
 ```
+
 This can be tested with:
-```
-$python example.py -v
+
+```bash
+$ python example.py -v
 ```
 
 ### References
-
-Thanks to the following
-
 
 - [Pycharm Documentation on Docstrings](https://www.jetbrains.com/help/pycharm/using-docstrings-to-specify-types.html)
 - [Documenting Python Code by RealPython](https://realpython.com/documenting-python-code/#documenting-your-python-projects)
