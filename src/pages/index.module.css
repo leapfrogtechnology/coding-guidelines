@@ -1,0 +1,13 @@
+.heroBanner {
+  padding: 4rem;
+  text-align: center;
+}
+
+.heroLogo {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 2rem;
+}
