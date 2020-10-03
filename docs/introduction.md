@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: General Coding Standards
+title: General Coding Guidelines
 ---
 
 * Firstly, it's recommended to use a static code analysis tools to analyze the code before it's pushed to the version control. For eg: eslint, tslint, pylint, codeclimate, sonar etc. Development Team should identify corresponding tool for their tech stack and use it to follow community wide general coding standards and avoid general bad practice.
@@ -8,11 +8,11 @@ title: General Coding Standards
 * No hard coding, use constants/configuration values instead of hard-coding literal values.
 
 * Do not store config as constants in the code. Use separate config files for storing application credentials such as passwords, access key etc. Make sure you add this file in .gitignore file.
-  
+
 * Group similar values under enums, constant groups or similar data structures depending on what the language allows.
-  
+
 * Avoid code duplication (DRY). If the same code needs to be reused in multiple places, create a extract a common function instead.
-  
+
 * While writing code make sure it doesn't violate SRP (Single Responsibility Principle). To be more specific take care of the following:
 
 * A function/method should do only one task.
@@ -60,7 +60,7 @@ title: General Coding Standards
 * Also, make sure you write doc blocks, comments etc in proper english. Re-check your sentences, to ensure they're typo free.
 
 * Different languages have different standards for doc blocks. Follow the language specific standard for doc blocks. For examples:
-  
+
 <!--JavaScript-->
     /**
      * Hit the twilio API to send notifications.
@@ -78,10 +78,10 @@ title: General Coding Standards
     Deployment rollback to the previous build, or
     the build identified by the given id.
     '''
- 
+
     (_, current_path) = setup_remote()
     history = load_history()
- 
+
     # If the current build in the history is not set yet or
     # there aren't any previous builds on the history
     # rollback is not possible.
@@ -98,7 +98,7 @@ title: General Coding Standards
 
 * Follow language specific naming convention.
 
-  * Use PascalCase naming convention for Components, Classes, or interfaces, enums, or other custom types. 
+  * Use PascalCase naming convention for Components, Classes, or interfaces, enums, or other custom types.
 
   * Use camelCase for naming functions, variables etc.
 
@@ -138,4 +138,4 @@ title: General Coding Standards
 
   * Example: In some places, there is `>=256 && <=512` and in other place there is `>255 && <511`.
 
-  * Why? Lesser cognitive burden, enforce consistency and avoid confusion. 
+  * Why? Lesser cognitive burden, enforce consistency and avoid confusion.
