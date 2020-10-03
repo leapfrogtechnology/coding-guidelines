@@ -1,7 +1,7 @@
 ---
 id: js-general-guidelines
 title: JS General Coding Guidelines
-sidebar_label: Javascript
+sidebar_label: JavaScript
 ---
 
 ### Code Quality
@@ -27,8 +27,7 @@ Apart from the eslint validation. Following should be taken care of.
 
 - Don't mutate the parameters received in functions.
 
-<!--Javascript-->
-
+    ```js
     // DO NOT MUTATE function parameters.
     function getName(person) {
         person.name = person.firstName + ' ' + person.lastName;
@@ -40,11 +39,11 @@ Apart from the eslint validation. Following should be taken care of.
         let fullName = person.firstName + ' ' + person.lastName;
         return fullName;
     }
+    ```
 
 - Avoid unnecessary else blocks as much as possible.
 
-<!--Javascript-->
-
+    ```js
     // Avoid unnecessary else block if possible.
     function nullIfEmpty(value) {
         if (typeof value === 'string') {
@@ -61,6 +60,7 @@ Apart from the eslint validation. Following should be taken care of.
         }
         return value.trim() === '' ? null : value;
     }
+    ```
 
 - Avoid nested if blocks, multiple if blocks.
   
@@ -70,26 +70,47 @@ Apart from the eslint validation. Following should be taken care of.
 
 - Avoid having more than 3 parameters in a function.
 
+    If your function requires many parameters, send all the parameters as a single object instead.
+
+    ```js
+    // Bad
+    function setInfo(userName, firstName, lastName, email, website, dob) {
+        ...
+    }
+
+    // Good
+    function setInfo({ userName, firstName, lastName, email, website, dob }) {
+        ...
+    }
+
+    // Good
+    function setInfo(info) {
+        const { userName, firstName, lastName, email, website, dob } = info;
+        ...
+    }
+    ```
+
 - Break down or refactor code with complexity into multiple smaller functions.
 
-- Use **async/awai**t or Promises for async operation and avoid callback hells.
+- Use **async/await** or Promises for async operation and avoid callback hells.
 
 - DocBlocks – Add doc blocks for each and every function, to clearly mention what it does. Docblocks also should mention the parameter types or return types.
   
-<!--Javascript-->
+    ```js
     /**
-      * Hit the twilio API to send notifications.
+      * Call twilio API to send notifications.
       * 
-      *
       * @param {object} payload
       * @returns {Promise<object>}
     */
     function sendNotification(payload) {
         return twilioClient.sendMessage(payload);
-    }  
+    }
+    ```
 
 - Make use of higher order functions for array and list manipulation and transformation eg: map, reduce, filter etc instead of plain old for loops.
-<!--Javascript-->
+
+    ```js
     // Avoid using loops for list/array transformation like this
     function submitForm(users) {
         let promises = [];   
@@ -109,6 +130,7 @@ Apart from the eslint validation. Following should be taken care of.
             .map(saveUser);
         return Promise.all(promises);
     }
+    ```
 
 - Use framework features, or util functions provided by libraries wherever possible instead of writing custom code.
 - Don't hard-code text data in the code itself, instead put text content/messages in the internationalization files and use the content identifiers instead.
