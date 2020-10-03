@@ -12,44 +12,44 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
 
 ### Embedded document pattern
 
-- Embedding connected data in a single document can reduce the number of read operations required to obtain data.
-    In general, you should structure your schema so your application receives all of its required information in a single read operation.
-    If the number of embedded document(s)(child documents) are limited to fewer numbers then this can be better options.
-    For example, `User To Accounts`, `User To Addresses`, `Post To Comments`, can be modeled to embedded document pattern in one to many relationship.
+Embedding connected data in a single document can reduce the number of read operations required to obtain data. In general, you should structure your schema so your application receives all of its required information in a single read operation. If the number of embedded document(s)(child documents) are limited to fewer numbers then this can be better options.
 
-  ```json
-  {
-    "id": "1",
-    "name": "John Doe",
-    "accounts": [
-      {
-        "bank": "123 fake bank",
-        "accountNumber": "1231308239",
-        "accountType": "saving",
-        "address":"123 fake street",
-        "createdDate":"2020-06-06",
-        "valid" :true,
-        "balance": "100.00",
-      },
-      {
-        "bank": "abc fake bank",
-        "accountNumber": "1231308239",
-        "accountType": "saving",
-        "address":"123 fake street",
-        "createdDate":"2020-07-06",
-        "valid" :true,
-        "balance": "100.00",
-      }
-    ]
-  }
-  ```
+For example, `User To Accounts`, `User To Addresses`, `Post To Comments`, can be modeled to embedded document pattern in one to many relationship.
+
+```json
+{
+  "id": "1",
+  "name": "John Doe",
+  "accounts": [
+    {
+      "bank": "123 fake bank",
+      "accountNumber": "1231308239",
+      "accountType": "saving",
+      "address":"123 fake street",
+      "createdDate":"2020-06-06",
+      "valid" :true,
+      "balance": "100.00"
+    },
+    {
+      "bank": "abc fake bank",
+      "accountNumber": "1231308239",
+      "accountType": "saving",
+      "address":"123 fake street",
+      "createdDate":"2020-07-06",
+      "valid" :true,
+      "balance": "100.00"
+    }
+  ]
+}
+```
 
  However, there are 3 potential problems associated with this approach that one should be aware of.
- :::caution
-    - The embedded documents might grow larger and consequently growing main document size. NoSql DBs have limit on document size for example 16MB in case of Mongodb, 1 MB in case of google fire store.
-    - This could result in slow write performance as the embedded documents grows significantly larger in number.
-    - The third problem is exposed when one tries to perform pagination on the embedded documents
- :::
+
+:::caution
+  * The embedded documents might grow larger and consequently growing main document size. NoSql DBs have limit on document size for example 16MB in case of Mongodb, 1 MB in case of google fire store.
+  * This could result in slow write performance as the embedded documents grows significantly larger in number.
+  * The third problem is exposed when one tries to perform pagination on the embedded documents
+:::
 
 ### Subset Pattern
 
@@ -61,7 +61,7 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
   {
     "id":"1",
     "name":"John Doe",
-    "accounts":[
+    "accounts": [
       {
         "bank":"123 fake bank",
         "accountNumber":"1231308239"
@@ -84,7 +84,7 @@ An example is a `Post` where a blog might have many `Comments` but a `Comment` i
 
 ### Document references
 
-- This is normalised case of structuring data by adding reference or id of the required document inside other document as a foreign key.
+* This is normalised case of structuring data by adding reference or id of the required document inside other document as a foreign key.
 **This is recommended only when the document being referenced is highly changing.**
 This will impact read performance.
 
@@ -110,14 +110,14 @@ The another approach is to link `Accounts` to the `User` using a more traditiona
 
 ```json
 {
-  "id":"1",
-  "userId:"1",
+  "id": "1",
+  "userId: "1",
   "bank": "123 fake bank",
   "accountNumber": "1231308239"
 },
 {
-  "id":"2",
-  "userId:"1",
+  "id": "2",
+  "userId: "1",
   "bank": "abc fake bank",
   "accountNumber": "1231308239"
 }

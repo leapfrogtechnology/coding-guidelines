@@ -31,7 +31,7 @@ Let's consider an example between `employee` and `address`. The `address` belong
 {
   "id":"1",
   "name":"John Doe",
-  "address":{
+  "address": {
     "street":"123 Fake Street",
     "city":"Faketon",
     "state":"MA",
