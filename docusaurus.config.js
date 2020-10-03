@@ -1,14 +1,14 @@
 module.exports = {
-  title: 'Coding Guidelines',
-  tagline: 'Leapfrog Coding Guidelines',
+  title: 'Leapfrog Coding Guidelines',
+  tagline: 'Coding guidelines for projects at Leapfrog Technology',
   url: 'https://coding-guidelines.lftechnology.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'lftechnology', // Usually your GitHub org/user name.
   projectName: 'coding-guidelines', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Coding Guidelines',
+      title: 'Leapfrog Coding Guidelines',
       logo: {
         alt: 'Leapfrog Technology Logo',
         src: 'img/favicon.png',
@@ -29,11 +29,19 @@ module.exports = {
           items: [
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/lftechnology/',
+              href: 'https://www.facebook.com/lftechnology',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/lftechnology',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/lftechnology',
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/lftechnology/',
+              href: 'https://www.instagram.com/lftechnology',
             }
           ],
         },
@@ -42,7 +50,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'https://www.lftechnology.com/blog/',
+              to: 'https://www.lftechnology.com/blog',
             },
             {
               label: 'GitHub',
@@ -59,18 +67,9 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          //routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/leapfrogtechnology/coding-guidelines/tree/develop/',
-        },
-        blog: {
-          showReadingTime: true,
-          routeBasePath : '/',
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
