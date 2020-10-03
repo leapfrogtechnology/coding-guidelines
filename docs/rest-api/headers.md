@@ -6,7 +6,7 @@ sidebar_label: Headers
 
 #### The following convention should be followed for REST API Headers
 
-* Headers names should be **noun**  and should be **Captialised-Case** separated by **(-)**. e.g  **Token-Key**, **Account-ID**, **Tenant-ID** etc
+* Headers names should be **noun** and should be **Captialised-Case** separated by **(-)**. e.g  **Token-Key**, **Account-ID**, **Tenant-ID** etc
 
 * For cases like Acronym, use acronyms itself. eg. *PID-value*, *PIN*
 
@@ -20,5 +20,5 @@ sidebar_label: Headers
 
 * Avoid using headers for business logic
 
-* Use headers for parameters that should not appear in the URL 
+* Use headers for parameters that should not appear in the URL
   * for e.g https://api.application.com/users/{id}/fetch?apiKey=abcd123456789 //**BAD Practice**

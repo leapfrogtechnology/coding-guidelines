@@ -1,6 +1,6 @@
 ---
 id: functions
-title: Functions 
+title: Functions
 sidebar_label: Functions
 ---
 
@@ -9,19 +9,20 @@ sidebar_label: Functions
 * Method names should contain a verb, as they are used to make an object take action. They should be mixed case, beginning with a lowercase letter, and the first letter of each subsequent word should be capitalized. Adjectives and nouns may be included in method names:
 
 ### verb
-```
+
+```java
 public int calculateRemainingLeaves() {
 
     //implementation
 
-} 
+}
 ```
 
 ### verb and noun
 
-```
+```java
 public String getFullName() {
-    
+
     //implementation
 }
 ````

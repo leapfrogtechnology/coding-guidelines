@@ -10,8 +10,8 @@ sidebar_label: Classes
   - **LeaveController**
   - **EmployeeRepository**
   - **AttendanceRecord**
-  
-* Test classes are named starting with the name of the class they are testing, and ending with Test. For example, 
+
+* Test classes are named starting with the name of the class they are testing, and ending with Test. For example,
   - **LeaveControllerTest**
   - **AttendanceRecordTest**
 

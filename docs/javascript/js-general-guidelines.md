@@ -27,43 +27,46 @@ Apart from the eslint validation. Following should be taken care of.
 
 - Don't mutate the parameters received in functions.
 
-    ```js
-    // DO NOT MUTATE function parameters.
-    function getName(person) {
-        person.name = person.firstName + ' ' + person.lastName;
-        return person.name;
-    }
+  ```js
+  // DO NOT MUTATE function parameters.
+  function getName(person) {
+    person.name = person.firstName + ' ' + person.lastName;
 
-    // Try to make the function a pure function where ever possible and avoid unnecessary side-effects.
-    function getName(person) {
-        let fullName = person.firstName + ' ' + person.lastName;
-        return fullName;
-    }
-    ```
+    return person.name;
+  }
+
+  // Try to make the function a pure function where ever possible and avoid unnecessary side-effects.
+  function getName(person) {
+    let fullName = person.firstName + ' ' + person.lastName;
+
+    return fullName;
+  }
+  ```
 
 - Avoid unnecessary else blocks as much as possible.
 
-    ```js
-    // Avoid unnecessary else block if possible.
-    function nullIfEmpty(value) {
-        if (typeof value === 'string') {
-            return value.trim() === '' ? null : value;
-        } else {
-            return value;
-        }
+  ```js
+  // Avoid unnecessary else block if possible.
+  function nullIfEmpty(value) {
+    if (typeof value === 'string') {
+      return value.trim() === '' ? null : value;
+    } else {
+      return value;
+    }
+  }
+
+  // Like this
+  function nullIfEmpty(value) {
+    if (typeof value !== 'string') {
+      return value;
     }
 
-    // Like this
-    function nullIfEmpty(value) {
-        if (typeof value !== 'string') {
-            return value;
-        }
-        return value.trim() === '' ? null : value;
-    }
-    ```
+    return value.trim() === '' ? null : value;
+  }
+  ```
 
 - Avoid nested if blocks, multiple if blocks.
-  
+
 - While writing code make sure it doesn't violate SRP (Single Responsibility Principle). To be more specific take care of the following:
 
 - A function should do only one task.
@@ -72,65 +75,65 @@ Apart from the eslint validation. Following should be taken care of.
 
     If your function requires many parameters, send all the parameters as a single object instead.
 
-    ```js
-    // Bad
-    function setInfo(userName, firstName, lastName, email, website, dob) {
-        ...
-    }
+  ```js
+  // Bad
+  function setInfo(userName, firstName, lastName, email, website, dob) {
+    ...
+  }
 
-    // Good
-    function setInfo({ userName, firstName, lastName, email, website, dob }) {
-        ...
-    }
+  // Good
+  function setInfo({ userName, firstName, lastName, email, website, dob }) {
+    ...
+  }
 
-    // Good
-    function setInfo(info) {
-        const { userName, firstName, lastName, email, website, dob } = info;
-        ...
-    }
-    ```
+  // Good
+  function setInfo(info) {
+    const { userName, firstName, lastName, email, website, dob } = info;
+    ...
+  }
+  ```
 
 - Break down or refactor code with complexity into multiple smaller functions.
 
 - Use **async/await** or Promises for async operation and avoid callback hells.
 
 - DocBlocks – Add doc blocks for each and every function, to clearly mention what it does. Docblocks also should mention the parameter types or return types.
-  
-    ```js
-    /**
-      * Call twilio API to send notifications.
-      * 
-      * @param {object} payload
-      * @returns {Promise<object>}
-    */
-    function sendNotification(payload) {
-        return twilioClient.sendMessage(payload);
-    }
-    ```
+
+  ```js
+  /**
+    * Call twilio API to send notifications.
+    *
+    * @param {object} payload
+    * @returns {Promise<object>}
+  */
+  function sendNotification(payload) {
+    return twilioClient.sendMessage(payload);
+  }
+  ```
 
 - Make use of higher order functions for array and list manipulation and transformation eg: map, reduce, filter etc instead of plain old for loops.
 
-    ```js
-    // Avoid using loops for list/array transformation like this
-    function submitForm(users) {
-        let promises = [];   
-        for (let user of users) {
-            if (isNotSaved(user)) {
-                promises.push(saveUser(user));
-            }
-        }
-        return Promise.all(promises);
+  ```js
+  // Avoid using loops for list/array transformation like this
+  function submitForm(users) {
+    let promises = [];
+    for (let user of users) {
+      if (isNotSaved(user)) {
+        promises.push(saveUser(user));
+      }
     }
 
-    // Prefer a more functional approach for
-    // transformation using higher order function.
-    function submitForm(users) {
-        let promises = users
-            .filter(isNotSaved)
-            .map(saveUser);
-        return Promise.all(promises);
-    }
-    ```
+    return Promise.all(promises);
+  }
+
+  // Prefer a more functional approach for
+  // transformation using higher order function.
+  function submitForm(users) {
+    let promises = users.filter(isNotSaved).map(saveUser);
+
+    return Promise.all(promises);
+  }
+  ```
 
 - Use framework features, or util functions provided by libraries wherever possible instead of writing custom code.
 - Don't hard-code text data in the code itself, instead put text content/messages in the internationalization files and use the content identifiers instead.

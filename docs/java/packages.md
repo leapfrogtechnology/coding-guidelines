@@ -12,8 +12,8 @@ The prefix of a unique package name is always written in **all-lowercase ASCII l
     - Special characters are not allowed while naming packages, only alphanumeric.
     - Avoid reserve keywords
 
-Subsequent components of the package name vary according to an organization's own internal naming conventions. Such conventions might specify on technical aspect or a feature aspect e.g employee, leave, department, project etc : 
-    
+Subsequent components of the package name vary according to an organization's own internal naming conventions. Such conventions might specify on technical aspect or a feature aspect e.g employee, leave, department, project etc:
+
    #### packaging by feature
 
     - com.projectname.employee
@@ -31,12 +31,11 @@ Subsequent components of the package name vary according to an organization's ow
     - com.projectname.factories
     - com.projectname.utils
     - com.projectname.repository
-  
-In some cases, the internet domain name may not be a valid package name. 
-This can occur if the domain name contains a hyphen or other special character, 
-if the package name begins with a digit or other character that is illegal to 
-use as the beginning of a Java name, or if the package name contains a reserved Java keyword, such as "int". 
-In this event, the suggested convention is to add an underscore. For example:
+
+In some cases, the internet domain name may not be a valid package name.
+This can occur if the domain name contains a hyphen or other special character,
+if the package name begins with a digit or other character that is illegal to
+use as the beginning of a Java name, or if the package name contains a reserved Java keyword, such as "int". In this event, the suggested convention is to add an underscore. For example:
 
 |  Domain Name                 |  Package Name Prefix |
 |---                           |                    ---|

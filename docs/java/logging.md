@@ -11,7 +11,7 @@ In a real-world production environment, you usually don’t have the luxury of d
 ### Logging Conventions
 
 * For consistency, declare your logger as the first field (top of code) in your class and declare it as follows:
-    - private static final Logger logger = Logger.getLogger(MyClassName.class.getName());
+  * private static final Logger logger = Logger.getLogger(MyClassName.class.getName());
 The variable name should be "logger". The term "logger" makes for cleaner code while not reducing any developer's ability to understand the code.
 
 * Never log private or sensitive information such as **user credentials** or **financial data**. The data which should remain private must not be logged.
@@ -39,5 +39,5 @@ The variable name should be "logger". The term "logger" makes for cleaner code w
 ### Logging Libraries
 
 * <a href="https://logging.apache.org/log4j/2.x/" target="_blank">Apache Log4j2 (recommended)</a>
-  
+
 * <a href="http://logback.qos.ch/manual/configuration.html" target="_blank">Logback</a>

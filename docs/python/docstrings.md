@@ -9,7 +9,7 @@ sidebar_label: Docstrings
 > Code is more often read than written - Guido Van Rossum
 
 A few lines of description written on top of a function can save
-the coder or a future developer hours or time reading the code. 
+the coder or a future developer hours or time reading the code.
 
 **Docstrings** are documentation that is written along with the code.
 There are different typs of docstrings in Python:
@@ -21,28 +21,26 @@ There are different typs of docstrings in Python:
 - Functions
 - Script
 
-
 ### Comments are not docstrings
 
 While comments are also written alongside code, docstrings are different
 from comments. While comments start with a '#' symbol, docstrings are
 also enclosed withing triple double quotes """This is a docstring""".
-The placement of docstrings is also crucial. Docstrings placed arbitrarily 
+The placement of docstrings is also crucial. Docstrings placed arbitrarily
 may simply be construed as a comment
 
 To illustrate this try the following in the python console
 
 ```python
-class Test: 
-   """This is a class docstring 
-   """ 
-   
-   def example_method(): 
-       """This is a method docstring 
-       """ 
-       pass 
-       
-   def example_method_2(): 
+class Test:
+   """This is a class docstring"""
+
+   def example_method():
+       """This is a method docstring
+       """
+       pass
+
+   def example_method_2():
        # This is a comment
        pass
 ```
@@ -59,14 +57,14 @@ This is a method docstring
 None
 ```
 
-As you can see from the examples above, docstrings get 
-attached to the `__doc__` property of the code itself whereas, 
+As you can see from the examples above, docstrings get
+attached to the `__doc__` property of the code itself whereas,
 the comments do not.
 
 
 ### Usage of docstrings
 
-From the console, you can use docstrings to an overview of 
+From the console, you can use docstrings to an overview of
 code as follows:
 
 ```python
@@ -75,19 +73,19 @@ Help on class Test in module __main__:
 
 class Test(builtins.object)
  |  This is a class docstring
- |  
+ |
  |  Methods defined here:
- |  
+ |
  |  example_method()
  |      This is a method docstring
- |  
+ |
  |  example_method_2()
 
 
 ```
 
 If a docstring is provided, you can get more readable
-information about python code. 
+information about python code.
 
 ** They are also used by your IDE to give you information while developing.**
 
@@ -118,12 +116,12 @@ talk specifically about docstring and we recommend that you read them
 
 ### Docstring template selection
 
-While you can write anything between the triple quotes(""") to 
-write your docstring, it is generally recommended to follow a 
+While you can write anything between the triple quotes(""") to
+write your docstring, it is generally recommended to follow a
 template for consistency and also for libraries to be able to
 parse your docstring easily.
 
-The official documentation standard for Python is ReStructed Text docstrings ([PEP 287](https://www.python.org/dev/peps/pep-0287/)). 
+The official documentation standard for Python is ReStructed Text docstrings ([PEP 287](https://www.python.org/dev/peps/pep-0287/)).
 However, Google docstrings have been widely accepted by the community as such we recommend it as we find it more readable and pythonic.
 If you're using using Numpy related libraries, you should be using Numpy Docstrings
 
@@ -152,7 +150,7 @@ in the docstrings
 - Add typing information where things can get confusing (**Recommended**). As python is a
 dynamically typed language, adding some type definition to the documentation can save
 the developers a lot of debugging time
-- Autodeploy the documentation site using a static deployment tool 
+- Autodeploy the documentation site using a static deployment tool
 to check that your docstrings render correctly
 
 ### Checking Docstring coverage
@@ -492,20 +490,20 @@ class ExampleClass:
 
     def _private_without_docstring(self):
         pass
-        
+
 ```
 
 #### ReStructured Text Doc strings
 
-You can see this kind of docstring especially in python libraries. 
+You can see this kind of docstring especially in python libraries.
 Please use **Google** style as they are more readable.
 
 ```python
 """The method below prints a given string twice
 
-The print method has been called twice for 
+The print method has been called twice for
 implementing this method
- 
+
 :param param1: String that is to be printed
 :type param1: str
 :return: Length of the input string
@@ -514,14 +512,14 @@ implementing this method
 def print_twice(param1):
     print(param1)
     print(param1)
-    
+
     return len(param1)
 
 """The method below prints a given string twice. This is for type annotation.
 
-The print method has been called twice for 
+The print method has been called twice for
 implementing this method
- 
+
 :param str param1: String that is to be printed
 :return: Length of the input string
 :rtype: int
@@ -529,13 +527,13 @@ implementing this method
 def print_twice(param1: str) -> int:
     print(param1)
     print(param1)
-    
+
     return len(param1)
 ```
 
 ## Doctests
 :::caution
-While this should not be used for all checks and [testing](testing.md) should be followed. They can be used for simple parameter checking. i.e. some default case like module level doctest in example below. 
+While this should not be used for all checks and [testing](testing.md) should be followed. They can be used for simple parameter checking. i.e. some default case like module level doctest in example below.
 
 They can be used with [pytest](https://docs.pytest.org/en/latest/doctest.html) as well.
 :::

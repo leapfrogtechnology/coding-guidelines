@@ -1,4 +1,4 @@
-module.exports = 
+module.exports =
 {
   "docs": {
     "Overview": [
@@ -22,7 +22,7 @@ module.exports =
       "rest-api/security",
       "rest-api/versioning"
     ],
-    "Github": [
+    "GitHub": [
       "git/branch-naming-convention",
       "git/branching-strategy",
       "git/smart-commit",
@@ -46,7 +46,7 @@ module.exports =
             "python/general",
             "python/tools"
         ]
-      }, 
+      },
       "python/docstrings",
       {
         "type": "category",
@@ -77,7 +77,6 @@ module.exports =
         "label": "General Coding Guidelines",
         "items": [
           "javascript/js-general-guidelines",
-          "javascript/ts-general-guidelines"
         ]
       }
     ],
@@ -91,7 +90,7 @@ module.exports =
           "java/interfaces",
           "java/variables",
           "java/functions"
-        ], 
+        ],
       },
       "java/logging",
       "java/tools",
