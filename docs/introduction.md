@@ -31,23 +31,24 @@ title: General Coding Guidelines
 
 * Avoid unnecessary else blocks as much as possible for better readability and cleanliness.
 
-<!--JavaScript-->
-    // Bad practice
-    function nullIfEmpty(value: any) {
-      if (typeof value === 'string') {
-        return value.trim() === '' ? null : value;
-      } else {
-        return value;
-      }
-    }
-
-    // Good practice
-    function nullIfEmpty(value: any) {
-      if (typeof value !== 'string') {
-        return value;
-      }
+  ```js
+  // Bad practice
+  function nullIfEmpty(value: any) {
+    if (typeof value === 'string') {
       return value.trim() === '' ? null : value;
+    } else {
+      return value;
     }
+  }
+
+  // Good practice
+  function nullIfEmpty(value: any) {
+    if (typeof value !== 'string') {
+      return value;
+    }
+    return value.trim() === '' ? null : value;
+  }
+  ```
 
 * Avoid nested if blocks, multiple if blocks. No pyramid of doom.
 
@@ -61,34 +62,37 @@ title: General Coding Guidelines
 
 * Different languages have different standards for doc blocks. Follow the language specific standard for doc blocks. For examples:
 
-<!--JavaScript-->
-    /**
-     * Hit the twilio API to send notifications.
-     *
-     * @param {NotificationPayload} payload
-     * @returns {Promise<object>}
-     */
-    function sendNotification(payload: NotificationPayload): Promise<object> {
-      return twilioClient.sendMessage(payload);
-    }
+  ```js
+  /**
+   * Hit the twilio API to send notifications.
+    *
+    * @param {NotificationPayload} payload
+    * @returns {Promise<object>}
+    */
+  function sendNotification(payload: NotificationPayload): Promise<object> {
+    return twilioClient.sendMessage(payload);
+  }
+  ```
 
-<!--Python-->
-    def rollback(id=None):
-    '''
-    Deployment rollback to the previous build, or
-    the build identified by the given id.
-    '''
+  ```py
+  def rollback(id=None):
+  '''
+  Deployment rollback to the previous build, or
+  the build identified by the given id.
+  '''
 
-    (_, current_path) = setup_remote()
-    history = load_history()
+  (_, current_path) = setup_remote()
+  history = load_history()
 
-    # If the current build in the history is not set yet or
-    # there aren't any previous builds on the history
-    # rollback is not possible.
-    if not history['current'] or not history['builds']:
-        remote_info('Could not get the previous build to rollback.')
-        return
-    ...
+  # If the current build in the history is not set yet or
+  # there aren't any previous builds on the history
+  # rollback is not possible.
+  if not history['current'] or not history['builds']:
+      remote_info('Could not get the previous build to rollback.')
+
+      return
+  ...
+  ```
 
 * Avoid re-inventing the wheel. Use framework features, or utilities provided by libraries wherever possible instead of writing custom code.
 
