@@ -13,8 +13,7 @@ sidebar_label: Naming Convention
 ### Database
 
 Example `dvd_rental`
-
-```
+```sql
 --
 -- Good
 CREATE DATABASE dvd_rental;
@@ -27,14 +26,14 @@ CREATE DATABASE [dvd rental];
 ### Schema
 
 Schema works as a namespace. Example `raw`, `ops`, `util`
-```
+```sql
 CREATE SCHEMA util;
 ```
 
 ### Table
 
 Example `actor`, `staff`, `category`, `film`, `film_category`, `film_actor`, `customer`, `sales`
-```
+```sql
 CREATE TABLE <schema>.actor (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(45) NOT NULL,
@@ -46,7 +45,7 @@ CREATE TABLE <schema>.actor (
 ### Views
 
 Example `actor_info`, `staff_list`, `film_list`, `customer_list`, `sales_by_category`
-```
+```sql
 CREATE VIEW <schema>.staff_list
 AS
 SELECT
@@ -64,7 +63,7 @@ FROM staff AS s
 ### Procedure
 
 Example `mark_as_expired`, `sync_actor_rating`
-```
+```sql
 CREATE OR ALTER PROCEDURE <schema>.procedure_name ()
 BEGIN
   -- Statements here
@@ -75,7 +74,7 @@ END;
 ### Function
 
 Example `get_capitalized_text`, `calculate_actor_rating`
-```
+```sql
 CREATE OR ALTER FUNCTION <schema>.function_name (
   @param_1 VARCHAR(50),
   @param_2 VARCHAR(50)
@@ -96,24 +95,24 @@ END;
 
 ### Primary Key Constraint
 
-```
+```sql
 table_name_pkey
 ```
 
 ### Foreign Key Constraint
 
-```
+```sql
 table_name_column_name_foreign
 ```
 
 ### Unique Constraint
 
-```
+```sql
 table_name_column_name_unique
 ```
 
 ### Check Constraint
 
-```
+```sql
 table_name_column_name_check
 ```
