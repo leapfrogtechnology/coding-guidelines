@@ -12,7 +12,8 @@ sidebar_label: Naming Convention
 
 ### Database
 
-Example `dvd_rental`
+Example `dvd_rental`.
+
 ```sql
 --
 -- Good
@@ -25,14 +26,16 @@ CREATE DATABASE [dvd rental];
 
 ### Schema
 
-Schema works as a namespace. Example `raw`, `ops`, `util`
+Schema works as a namespace. Example `raw`, `ops`, `util`.
+
 ```sql
 CREATE SCHEMA util;
 ```
 
 ### Table
 
-Example `actor`, `staff`, `category`, `film`, `film_category`, `film_actor`, `customer`, `sales`
+Example `actor`, `staff`, `category`, `film`, `film_category`, `film_actor`, `customer`, `sales`.
+
 ```sql
 CREATE TABLE dbo.actor (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -42,9 +45,10 @@ CREATE TABLE dbo.actor (
 );
 ```
 
-### Views
+### View
 
-Example `actor_info`, `staff_list`, `film_list`, `customer_list`, `sales_by_category`
+Example `actor_info`, `staff_list`, `film_list`, `customer_list`, `sales_by_category`.
+
 ```sql
 CREATE VIEW report.staff_list
 AS
@@ -62,7 +66,8 @@ FROM dbo.staff AS s
 
 ### Procedure
 
-Example `mark_as_expired`, `sync_actor_rating`
+Example `mark_as_expired`, `sync_actor_rating`.
+
 ```sql
 CREATE OR ALTER PROCEDURE automation.mark_as_expired ()
 BEGIN
@@ -73,7 +78,8 @@ END;
 
 ### Function
 
-Example `get_capitalized_text`, `calculate_actor_rating`
+Example `get_capitalized_text`, `calculate_actor_rating`.
+
 ```sql
 CREATE OR ALTER FUNCTION util.get_capitalized_text (
   @param_1 VARCHAR(50),
@@ -94,6 +100,7 @@ END;
 ## Constraints
 
 When naming a constraint use the following template as reference:
+
 ```
 <key_type_abbr>_<table_name>_<column_name_1>_<column_name_2>...<column_name_N>
 ```
