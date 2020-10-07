@@ -93,26 +93,35 @@ END;
 
 ## Constraints
 
+When naming a constraint use the following template as reference:
+```
+<key_type_abbr>_<table_name>_<column_name_1>_<column_name_2>...<column_name_N>
+```
+
 ### Primary Key Constraint
 
 ```sql
-table_name_pkey
+ALTER TABLE dbo.actor
+ADD CONSTRAINT pk_actor_id PRIMARY KEY (id);
 ```
 
 ### Foreign Key Constraint
 
 ```sql
-table_name_column_name_foreign
+ALTER TABLE dbo.film
+ADD CONSTRAINT fk_film_actor_id FOREIGN KEY (actor_id) REFERENCES actor(id);
 ```
 
 ### Unique Constraint
 
 ```sql
-table_name_column_name_unique
+ALTER TABLE dbo.user_account
+ADD CONSTRAINT uc_user_account_email UNIQUE (email);
 ```
 
 ### Check Constraint
 
 ```sql
-table_name_column_name_check
+ALTER TABLE dbo.user
+ADD CONSTRAINT chk_user_age CHECK (age >= 18);
 ```
