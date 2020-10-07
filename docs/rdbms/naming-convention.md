@@ -34,7 +34,7 @@ CREATE SCHEMA util;
 
 Example `actor`, `staff`, `category`, `film`, `film_category`, `film_actor`, `customer`, `sales`
 ```sql
-CREATE TABLE <schema>.actor (
+CREATE TABLE dbo.actor (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(45) NOT NULL,
   last_name VARCHAR(45) NOT NULL,
@@ -46,15 +46,15 @@ CREATE TABLE <schema>.actor (
 
 Example `actor_info`, `staff_list`, `film_list`, `customer_list`, `sales_by_category`
 ```sql
-CREATE VIEW <schema>.staff_list
+CREATE VIEW report.staff_list
 AS
 SELECT
-  s.staff_id AS ID,
+  s.staff_id AS staff_id,
   CONCAT(s.first_name, ' ', s.last_name) AS name,
   a.address AS address,
   a.postal_code AS zip_code,
   a.phone AS phone,
-  s.store_id AS SID
+  s.store_id AS store_id
 FROM staff AS s
   JOIN address AS a
     ON s.address_id = a.address_id;
@@ -64,7 +64,7 @@ FROM staff AS s
 
 Example `mark_as_expired`, `sync_actor_rating`
 ```sql
-CREATE OR ALTER PROCEDURE <schema>.procedure_name ()
+CREATE OR ALTER PROCEDURE automation.mark_as_expired ()
 BEGIN
   -- Statements here
 END;
@@ -75,7 +75,7 @@ END;
 
 Example `get_capitalized_text`, `calculate_actor_rating`
 ```sql
-CREATE OR ALTER FUNCTION <schema>.function_name (
+CREATE OR ALTER FUNCTION util.get_capitalized_text (
   @param_1 VARCHAR(50),
   @param_2 VARCHAR(50)
 )
