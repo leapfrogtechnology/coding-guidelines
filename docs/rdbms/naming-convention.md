@@ -55,8 +55,8 @@ SELECT
   a.postal_code AS zip_code,
   a.phone AS phone,
   s.store_id AS store_id
-FROM staff AS s
-  JOIN address AS a
+FROM dbo.staff AS s
+  JOIN dbo.address AS a
     ON s.address_id = a.address_id;
 ```
 
