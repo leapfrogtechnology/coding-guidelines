@@ -6,40 +6,45 @@ sidebar_label: Naming Convention
 
 #### The following convention should be followed for naming RDBMS:
 
-* Use Snake Case with lowercase while naming.
-* Use uppercase for SQL keywords.
-* Don’t use dots, spaces, or dashes in database, schema, table, or column names.
+* Use `snake_case` with lowercase while naming.
+* Use uppercase for SQL keywords and built-in functions.
+* Avoid use of dots, spaces, or dashes in database, schema, table, or column names.
 
 ### Database
+
 Example `dvd_rental`
 
 ```
 --
 -- Good
 CREATE DATABASE dvd_rental;
-```
 
-```
 --
 -- Bad
 CREATE DATABASE [dvd rental];
 ```
 
 ### Schema
-Schema works as a namespace
+
+Schema works as a namespace. Example `raw`, `ops`, `util`
+```
+CREATE SCHEMA util;
+```
 
 ### Table
+
 Example `actor`, `staff`, `category`, `film`, `film_category`, `film_actor`, `customer`, `sales`
 ```
 CREATE TABLE <schema>.actor (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(45) NOT NULL,
   last_name VARCHAR(45) NOT NULL,
-  last_update TIMESTAMP NOT NULL
+  created_at TIMESTAMP NOT NULL
 );
 ```
 
 ### Views
+
 Example `actor_info`, `staff_list`, `film_list`, `customer_list`, `sales_by_category`
 ```
 CREATE VIEW <schema>.staff_list
@@ -57,8 +62,10 @@ FROM staff AS s
 ```
 
 ### Procedure
+
+Example `mark_as_expired`, `sync_actor_rating`
 ```
-CREATE OR ALTER PROCEDURE procedure_name ()
+CREATE OR ALTER PROCEDURE <schema>.procedure_name ()
 BEGIN
   -- Statements here
 END;
@@ -66,6 +73,8 @@ END;
 
 
 ### Function
+
+Example `get_capitalized_text`, `calculate_actor_rating`
 ```
 CREATE OR ALTER FUNCTION <schema>.function_name (
   @param_1 VARCHAR(50),
@@ -86,21 +95,25 @@ END;
 ## Constraints
 
 ### Primary Key Constraint
+
 ```
 table_name_pkey
 ```
 
 ### Foreign Key Constraint
+
 ```
 table_name_column_name_foreign
 ```
 
 ### Unique Constraint
+
 ```
 table_name_column_name_unique
 ```
 
 ### Check Constraint
+
 ```
 table_name_column_name_check
 ```
