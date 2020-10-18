@@ -6,7 +6,10 @@ sidebar_label: Naming Convention
 
 #### The following convention should be followed for naming RDBMS:
 
-* Use `snake_case` with lowercase while naming.
+> Consistency is the best approach.
+
+* Use lowercase names. e.g. `user`, `username`
+* If the name of the table or column must consist of more than one word, use an underscore(`_`) to connect them(i.e. `snake_case`). e.g. `user_account`
 * Use `UPPERCASE` for SQL keywords (e.g. `SELECT`, `INSERT`) and built-in functions (e.g. `LOWER()`, `COUNT()`).
 * Avoid use of dots, spaces, or dashes in database, schema, table, or column names.
 * When naming objects, balance the objective of keeping names short and easy to use with the objective of making names as descriptive as possible. When in doubt, choose the more descriptive name, because the objects in the database may be used by many people over a period of time.
@@ -108,11 +111,21 @@ END;
 
 ## Constraints
 
-When naming a constraint use the following template as reference:
+Two popular way of naming a constraints uses either abbreviation or the short name of the constraint type.
+It's a user preference to use one or the other but make sure they are used consistently everywhere.
+
+| Constraints | Abbreviation |  Short Name |
+|:------------|:------------:|:-----------:|
+| Primary Key |      pk      |   primary   |
+| Foreign Key |      fk      |   foreign   |
+| Unique      |      uc      |   unique    |
+| Check       |      chk     |   check     |
+
+When naming a constraint use the following template (replace `<key_type>` using the above table) as reference:
 
 ```
-<key_type_abbr>_<table_name>_<column_name_1>_<column_name_2>...<column_name_N>
-```
+<key_type>_<table_name>_<column_name_1>_<column_name_2>...<column_name_N>
+``` 
 
 ### Primary Key Constraint
 
