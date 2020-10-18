@@ -154,3 +154,20 @@ ADD CONSTRAINT uc_user_account_email UNIQUE (email);
 ALTER TABLE dbo.user
 ADD CONSTRAINT chk_user_age CHECK (age >= 18);
 ```
+
+## Indexes
+
+When naming a index use the following template as reference:
+
+```
+<index|idx>_<table_name>_<column_name_1>_<column_name_2>...<column_name_N>
+```
+
+*Note: Like constraint, the prefix can be either the abbreviation(`idx`) or `index` itself. Make sure you are using them consistently with constraint name.*
+
+Example `idx_user_account_first_name`, `idx_user_account_username_email`.
+
+```sql
+CREATE INDEX idx_user_account_username_email
+ON user_account(username, email);
+```
