@@ -113,6 +113,9 @@ module.exports =
             "nosql/documentdb/many-to-many-relationship"
         ]
       }
+    ],
+    "RDBMS": [
+      "rdbms/rdbms-naming-convention"
     ]
   }
 }
