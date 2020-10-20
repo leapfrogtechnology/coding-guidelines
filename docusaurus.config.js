@@ -13,7 +13,7 @@ module.exports = {
         alt: 'Leapfrog Technology Logo',
         src: 'img/favicon.png',
       },
-      links: [
+      items: [
         {
           href: 'https://github.com/leapfrogtechnology/coding-guidelines',
           label: 'GitHub',
@@ -54,7 +54,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/leapfrogtechnology/coding-guidelines',
+              href: 'https://github.com/leapfrogtechnology',
             },
           ],
         },
