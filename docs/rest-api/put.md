@@ -1,7 +1,7 @@
 ---
 id: put
 title: Put Method
-sidebar_label: Put
+sidebar_label: PUT
 ---
 
 Use **PUT** APIs primarily to update existing resource (if the resource does not exist, then API may decide to create a new resource or not). If a new resource has been created by the PUT API, the origin server MUST inform the user agent via the HTTP response code 201 (Created) response and if an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request.

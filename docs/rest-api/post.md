@@ -1,7 +1,7 @@
 ---
 id: post
 title: Post Method
-sidebar_label: Post
+sidebar_label: POST
 ---
 
 Use **POST requests** to create new subordinate resources, e.g., a file is subordinate to a directory containing it or a row is subordinate to a database table. Talking strictly in terms of REST, POST methods are used to create a new resource into the collection of resources.Note that POST is **neither safe nor idempotent**, and invoking two identical POST requests will result in two different resources containing the same information (except resource ids).
