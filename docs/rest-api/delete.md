@@ -1,7 +1,7 @@
 ---
 id: delete
 title: Delete Method
-sidebar_label: Delete
+sidebar_label: DELETE
 ---
 
 As the name applies, **DELETE** APIs are used to delete resources (identified by the Request-URI).

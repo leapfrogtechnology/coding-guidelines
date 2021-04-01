@@ -1,7 +1,7 @@
 ---
 id: patch
 title: Patch Method
-sidebar_label: Patch
+sidebar_label: PATCH
 ---
 
 PATCH is used for **modify** capabilities. The PATCH request only needs to contain the changes to the resource, not the complete resource.

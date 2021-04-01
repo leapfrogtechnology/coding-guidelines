@@ -1,7 +1,7 @@
 ---
 id: get
 title: Get Method
-sidebar_label: Get
+sidebar_label: GET
 ---
 
 
