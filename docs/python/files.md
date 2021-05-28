@@ -10,7 +10,7 @@ sidebar_label: Files, Folders & Modules
 * Be explicit and descriptive of their functionality. Donot have short and ambiguous file and folder names.
     - E.g. `utils.py` or `utils` will describe of utility.
     - E.g. `aws_helper.py` will describe helper related to AWS.
-* Donot Clash names with inbuilt and famous modules.
+* Donot clash names with inbuilt and famous modules.
     - E.g. donot use `requests.py` or `list.py`
 * Be consistent when you are naming. Go with one form when choosing singular or plural names. i.e.
     - `tools`, `utils` or `tool`, `util` but  not `tools`, `util` combination.

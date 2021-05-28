@@ -46,7 +46,7 @@ sidebar_label: Project Structure
 
 :::note
 + **There can be cases where MVC folder structure as well as framework related folder structure can be used.**
-    - The framework recommended structure should be followed in such case.
+    - The framework recommended structure should be followed in such case. E.g. `flask`, `django` etc.
 + The OOP style cases of class as filename structue is not always necessary or recommended but can be used if needed.
 :::
 
