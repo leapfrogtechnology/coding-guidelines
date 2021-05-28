@@ -7,12 +7,19 @@ sidebar_label: Tools and Libraries
 :::info 
 These tools can be used along with your development environment and IDE so that you can follow coding conventions better.
 :::
-
-### Templates:
-* [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/)
+### Version Management
+:::info
+These can be used with dependency Management
+:::
+* [pyenv](https://github.com/pyenv/pyenv) with [venv](https://github.com/pyenv/pyenv-virtualenv) support. 
+    + [virtualenv](https://virtualenv.pypa.io/en/latest/)
 
 ### Dependency Management:
 * [poetry](https://python-poetry.org/)
+    + [pipenv](https://pipenv.pypa.io/en/latest/) can be used as well. 
+
+### Project Templates:
+* [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/)
 
 ### Linters:
 * [flake8](https://flake8.pycqa.org/en/latest/) with [plugins](https://github.com/DmytroLitvinov/awesome-flake8-extensions)

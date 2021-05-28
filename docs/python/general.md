@@ -6,6 +6,10 @@ sidebar_label: General Coding Guidelines
 
 #### These are the general guidelines to be followed:
 
+::tip
+It is recommended to upgrade the package dependency whenever possible althoug version pinning is a must.
+:::
+
 * See [tools](tools.md) that can be used in development environment setup to ease your coding process.
 * Always use `python3` and try to stay above version `3.7`. **Latest stable** is always recommended.
 * Indentation should always be **space** and width should always be **4**.
@@ -59,7 +63,7 @@ sidebar_label: General Coding Guidelines
     - Use `super` for overrides and parent calls.
     - Use inbuilt `dataclasses` if available. Go for `attrs` library if `dataclasses` is not present or you require a much richer library.
     - Use `classmethod` decorator for multiple initialization of classes as well as `staticmethod` where needed.
-* Use `pdb` as debugger whenever required.
+* Use `pdb` as debugger whenever required. Newer code can use `breakpoint` directly.
 * Multi-threading can be especially used when we have io bound and network bound multiple operation. Multiprocessing can be used to use multiple cores.
     - Recommended module is `concurrent.futures` in most cases. If lower level API is needed there is always `threading` and `multiprocessing` module.
     - Be very carefult on threads and locks, so always discuss what you are doing as it may not always be optimized.
