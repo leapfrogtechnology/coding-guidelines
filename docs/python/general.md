@@ -7,7 +7,7 @@ sidebar_label: General Coding Guidelines
 #### These are the general guidelines to be followed:
 
 ::tip
-It is recommended to upgrade the package dependency whenever possible althoug version pinning is a must.
+It is recommended to upgrade the package dependency whenever possible although version pinning is a must.
 :::
 
 * See [tools](tools.md) that can be used in development environment setup to ease your coding process.
