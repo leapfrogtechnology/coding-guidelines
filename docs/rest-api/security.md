@@ -10,7 +10,7 @@ sidebar_label: Security
 
 * Never expose information on URLs. <https://api.app.com/users/{id}/fetch?apiKey=abcd123456789> //Bad practice
 
-* Conside using token based authentication like OAUTH2
+* Consider using token based authentication like OAUTH2
 
 * Consider Adding Timestamp in Request
 
