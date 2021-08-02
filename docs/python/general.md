@@ -6,7 +6,7 @@ sidebar_label: General Coding Guidelines
 
 #### These are the general guidelines to be followed:
 
-::tip
+:::tip
 It is recommended to upgrade the package dependency whenever possible although version pinning is a must.
 :::
 
