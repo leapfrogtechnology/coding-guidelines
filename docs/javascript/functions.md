@@ -20,4 +20,4 @@ JavaScript functions are usually written in camelcase. In addition, it's a best 
   }
   ```
 
-This verb as prefix can be anything (e.g. get, fetch, push, apply, calculate, compute, post). It's yet another soft rule to consider for having more self-descriptive JavaScript variables.
+This verb as prefix can be anything (e.g. get, fetch, push, apply, calculate, compute, post). It's yet another soft rule to consider for having more self-descriptive JavaScript functions.

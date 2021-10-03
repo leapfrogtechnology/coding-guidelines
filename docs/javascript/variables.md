@@ -49,7 +49,7 @@ sidebar_label: Variables
 
 * One-character variable names must be avoided like i, j, k, m etc
 
-* Variables names should be declared as per their types
+* Variables names should be declared as per their types:
   * Map/KeyValue pair should be declared as *keyToValue* and *valueByKey*. For e.g **ageByName** or  **nameToAge**.
   * Set can be prefixed as *unique* before variable names. For e.g **uniqueNames**
   * Boolean can be prefixed as **is/are/has** e.g. **isVisible**, **isEligible**, **hasMaximumAmount**
