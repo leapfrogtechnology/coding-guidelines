@@ -106,7 +106,7 @@ await getProducts();
 await getLocations();
 
 // Good
-Promise.all([getUsers, getProducts, getLocations]);
+await Promise.all([getUsers, getProducts, getLocations]);
 
 ```
 
