@@ -1,7 +1,12 @@
-# Coding Guidelines
+# Leapfrog Technology Coding Guidelines
 
-This website contains coding standards and guidelines commonly followed at Leapfrog.
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+https://coding-guidelines.lftechnology.com
+
+Coding guidelines commonly followed at [Leapfrog Technology](https://www.lftechnology.com/).
+
+## Contributing
+
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
@@ -9,7 +14,7 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 $ yarn
 ```
 
-### Local Development
+### Development
 
 ```
 $ yarn start
