@@ -99,32 +99,32 @@ Apart from the eslint validation. Following should be taken care of:
 
 - Use Promise.all, Promise.allSettled instead of sequential asynchronous calls wherever applicable.
 
-```js
-// Bad
-await getUsers();
-await getProducts();
-await getLocations();
+  ```js
+  // Bad
+  await getUsers();
+  await getProducts();
+  await getLocations();
 
-// Good
-await Promise.all([getUsers, getProducts, getLocations]);
+  // Good
+  await Promise.all([getUsers, getProducts, getLocations]);
 
-```
+  ```
 
 - Always catch errors for asynchronous calls such as API calls. Either **try/catch** or **.catch** should be used to catch errors.
 
-```js
-// Bad
-const items = await getItems();
-this.filteredItems = items.filter(filterItems);
-
-// Good
-try {
+  ```js
+  // Bad
   const items = await getItems();
   this.filteredItems = items.filter(filterItems);
-} catch (error) {
-  this.handleError(error);
-}
-```
+
+  // Good
+  try {
+    const items = await getItems();
+    this.filteredItems = items.filter(filterItems);
+  } catch (error) {
+    this.handleError(error);
+  }
+  ```
 
 - DocBlocks – Add doc blocks for each and every function, to clearly mention what it does. Docblocks also should mention the parameter types or return types.
 
