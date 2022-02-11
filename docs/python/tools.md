@@ -34,7 +34,7 @@ These can be used with dependency Management
     - Alternative: [reorder-python-imports](https://github.com/asottile/reorder_python_imports) another way of sorting imports.
     
 ### Testing:
-* [pytest](https://pytest.org) with [plugins](https://docs.pytest.org/en/2.7.3/plugins_index/index.html)
+* [pytest](https://pytest.org) with [plugins](https://docs.pytest.org/en/7.0.x/reference/plugin_list.html)
     - Alternative: Inbuilt `unittest`
 * [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation and mocking in tests.
 * [tox](https://tox.readthedocs.io/en/latest/) for test automation in different `python` version
@@ -48,5 +48,5 @@ These can be used with dependency Management
 ### Readings and References:
 * [Design Patterns](https://python-patterns.guide/)
 * [Official Documentation](https://docs.python.org/3/)
-* [Python Code Quality](https://meta.pycqa.org/en/latest/index.html) for the tools like `flake8`, `pylint`, `bandit` etc along with others.
+* [Python Code Quality](https://github.com/PyCQA) for the tools like `flake8`, `pylint`, `bandit` etc along with others.
 * [Python Packages](https://www.pypa.io/en/latest/)
