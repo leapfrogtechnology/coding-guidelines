@@ -94,7 +94,7 @@ for your code:
 - [Sphinx](http://www.sphinx-doc.org/en/stable/)
 - [Epydoc](http://epydoc.sourceforge.net/)
 - [Read the docs](https://readthedocs.org/)
-- [Doxygen](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#pythonblocks)
+- [Doxygen](https://www.doxygen.nl/manual/docblocks.html#pythonblocks)
 - [MkDocs](https://www.mkdocs.org/)
 - [Pycco](https://pycco-docs.github.io/pycco/)
 
