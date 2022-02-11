@@ -69,7 +69,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/leapfrogtechnology/coding-guidelines/tree/master/',
+            'https://github.com/leapfrogtechnology/coding-guidelines/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
