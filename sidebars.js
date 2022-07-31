@@ -1,121 +1,107 @@
-module.exports =
-{
-  "docs": {
-    "Overview": [
-      "introduction",
-      "general/clean-code"
-    ],
+module.exports = {
+  docs: {
+    Overview: ["introduction", "general/clean-code"],
     "REST API": [
       "rest-api/headers",
       {
-        "type": "category",
-        "label": "Methods",
-        "items": [
+        type: "category",
+        label: "Methods",
+        items: [
           "rest-api/naming-convention",
           "rest-api/get",
           "rest-api/post",
           "rest-api/put",
           "rest-api/patch",
-          "rest-api/delete"
-        ]
+          "rest-api/delete",
+        ],
       },
       "rest-api/security",
-      "rest-api/versioning"
+      "rest-api/versioning",
     ],
-    "GitHub": [
+    GitHub: [
       "git/branch-naming-convention",
       "git/branching-strategy",
       "git/smart-commit",
       {
-        "type": "category",
-        "label": "Release Management",
-        "items": [
-          "git/tagging"
-        ]
+        type: "category",
+        label: "Release Management",
+        items: ["git/tagging"],
       },
       "git/pull-request-best-pratices",
-      "git/code-review-checklist"
+      "git/code-review-checklist",
     ],
-    "Python": [
+    Python: [
       "python/environment-and-dependency",
       "python/project-structure",
       {
-        "type": "category",
-        "label": "Practices and Tools",
-        "items": [
-            "python/general",
-            "python/tools"
-        ]
+        type: "category",
+        label: "Practices and Tools",
+        items: ["python/general", "python/tools"],
       },
       "python/docstrings",
       {
-        "type": "category",
-        "label": "Naming Convention",
-        "items": [
+        type: "category",
+        label: "Naming Convention",
+        items: [
           "python/files",
           "python/variables",
           "python/functions",
-          "python/classes"
-        ]
+          "python/classes",
+        ],
       },
       "python/exceptions",
       "python/logging",
-      "python/testing"
+      "python/testing",
     ],
-    "JavaScript": [
+    JavaScript: [
       {
-        "type": "category",
-        "label": "Naming Convention",
-        "items": [
+        type: "category",
+        label: "Naming Convention",
+        items: [
           "javascript/variables",
           "javascript/functions",
-          "javascript/classes"
-        ]
+          "javascript/classes",
+        ],
       },
       {
-        "type": "category",
-        "label": "General Coding Guidelines",
-        "items": [
-          "javascript/js-general-guidelines",
-        ]
-      }
+        type: "category",
+        label: "General Coding Guidelines",
+        items: ["javascript/js-general-guidelines"],
+      },
     ],
-    "Java": [
+    TypeScript: ["typescript/introduction", "typescript/types"],
+    Java: [
       {
-        "type": "category",
-        "label": "Naming Convention",
-        "items": [
+        type: "category",
+        label: "Naming Convention",
+        items: [
           "java/packages",
           "java/classes",
           "java/interfaces",
           "java/variables",
-          "java/functions"
+          "java/functions",
         ],
       },
       "java/logging",
       "java/tools",
       {
-        "type": "category",
-        "label": "Effective Java",
-        "items": [
-          "java/effective-java"
-        ]
-      }
+        type: "category",
+        label: "Effective Java",
+        items: ["java/effective-java"],
+      },
     ],
-    "NoSQL" : [
+    NoSQL: [
       {
-        "type": "category",
-        "label": "Document DB",
-        "items": [
-            "nosql/documentdb/document-db-naming-convention",
-            "nosql/documentdb/one-to-one-relationship",
-            "nosql/documentdb/one-to-many-relationship",
-            "nosql/documentdb/many-to-many-relationship"
-        ]
-      }
+        type: "category",
+        label: "Document DB",
+        items: [
+          "nosql/documentdb/document-db-naming-convention",
+          "nosql/documentdb/one-to-one-relationship",
+          "nosql/documentdb/one-to-many-relationship",
+          "nosql/documentdb/many-to-many-relationship",
+        ],
+      },
     ],
-    "RDBMS": [
-      "rdbms/rdbms-naming-convention"
-    ]
-  }
-}
+    RDBMS: ["rdbms/rdbms-naming-convention"],
+  },
+};
