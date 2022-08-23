@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Coding guidelines for projects at Leapfrog Technology',
   url: 'https://coding-guidelines.lftechnology.com',
   baseUrl: '/',
-  favicon: 'img/favicon.png',
+  favicon: 'img/icon.png',
   organizationName: 'lftechnology', // Usually your GitHub org/user name.
   projectName: 'coding-guidelines', // Usually your repo name.
   themeConfig: {
@@ -11,7 +11,7 @@ module.exports = {
       title: 'Leapfrog Coding Guidelines',
       logo: {
         alt: 'Leapfrog Technology Logo',
-        src: 'img/favicon.png',
+        src: 'img/icon.png',
       },
       items: [
         {
@@ -91,7 +91,7 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: 'img/logo.svg',
+            href: 'img/icon.png',
           },
           {
             tagName: 'link',
@@ -116,18 +116,18 @@ module.exports = {
           {
             tagName: 'link',
             rel: 'apple-touch-icon',
-            href: 'img/logo.svg',
+            href: 'img/icon.png',
           },
           {
             tagName: 'link',
             rel: 'mask-icon',
-            href: 'img/logo.svg',
+            href: 'img/icon.png',
             color: 'rgb(62, 204, 94)',
           },
           {
             tagName: 'meta',
             name: 'msapplication-TileImage',
-            content: 'img/logo.svg',
+            content: 'img/icon.png',
           },
           {
             tagName: 'meta',
