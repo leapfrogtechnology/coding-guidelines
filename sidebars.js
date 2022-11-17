@@ -43,8 +43,8 @@ module.exports =
         "type": "category",
         "label": "Practices and Tools",
         "items": [
-            "python/general",
-            "python/tools"
+          "python/general",
+          "python/tools"
         ]
       },
       "python/docstrings",
@@ -80,6 +80,15 @@ module.exports =
         ]
       }
     ],
+    "React with TS": [
+      {
+        "type": "category",
+        "label": "Naming Conventions",
+        "items": [
+          "react/components"
+        ]
+      }
+    ],
     "Java": [
       {
         "type": "category",
@@ -102,15 +111,15 @@ module.exports =
         ]
       }
     ],
-    "NoSQL" : [
+    "NoSQL": [
       {
         "type": "category",
         "label": "Document DB",
         "items": [
-            "nosql/documentdb/document-db-naming-convention",
-            "nosql/documentdb/one-to-one-relationship",
-            "nosql/documentdb/one-to-many-relationship",
-            "nosql/documentdb/many-to-many-relationship"
+          "nosql/documentdb/document-db-naming-convention",
+          "nosql/documentdb/one-to-one-relationship",
+          "nosql/documentdb/one-to-many-relationship",
+          "nosql/documentdb/many-to-many-relationship"
         ]
       }
     ],
