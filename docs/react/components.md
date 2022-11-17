@@ -8,5 +8,16 @@ sidebar_label: Components
 
 * `PascalCase` should be used to name the component file.
 * Name of the component should match the filename 
-  ** It should be understandable by everyone (no EntityForListItem)
-  ** it should be simple to use (no SimpleBeanFactoryAwareAspectInstanceFactory)
+  * It should be understandable by everyone (no **EntityForListItem)
+  * it should be simple to use (no SimpleBeanFactoryAwareAspectInstanceFactory)
+  <br />
+  ```
+  const SumbitButton = (props: SubmitButtonProps) => {
+    return (
+      <div>
+        ....
+      </div>
+    )
+  }
+  ```
+

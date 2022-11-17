@@ -85,7 +85,8 @@ module.exports =
         "type": "category",
         "label": "Naming Conventions",
         "items": [
-          "react/components"
+          "react/components",
+          "react/files"
         ]
       }
     ],
