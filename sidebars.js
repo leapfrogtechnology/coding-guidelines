@@ -22,7 +22,7 @@ module.exports =
       "rest-api/security",
       "rest-api/versioning"
     ],
-    "GitHub": [
+    "Git & GitHub": [
       "git/branch-naming-convention",
       "git/branching-strategy",
       "git/smart-commit",
