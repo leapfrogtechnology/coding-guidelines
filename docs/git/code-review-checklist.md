@@ -4,8 +4,6 @@ title: Code Review Checklist
 sidebar_label: Code Review Checklist
 ---
 
-Smart commits allows a team to perform actions on JIRA issues from a single commit. Users can enter the issue key and the desired action such as time tracking or closing an issue.
-
 #### List:
 
 * Description Confirmed?

@@ -14,7 +14,9 @@ Smart commits allows a team to perform actions on JIRA issues from a single comm
 
 #### Examples:
 
-    - git commit -m "FHF-34 #time 1w 2d 4h 30m Total work logged".
-    - DEL-101 #time 4h 30m Fix null pointers #comment Fixed code #resolve
+    - git commit -m "FHF-34 #time 1w 2d 4h 30m Total work logged"
+    - git commit -m "DEL-101 #time 4h 30m Fix null pointers #comment Fixed code #resolve"
+
+#### Helpful links:
 
 Want to add the branch name to your commit automatically? Check out [smart-commit](https://github.com/sbimochan/smart-commit)!
