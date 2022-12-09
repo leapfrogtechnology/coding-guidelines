@@ -19,7 +19,7 @@ Some status code to be considered are:
 
 * `200` for generic successful response.
 * `201` for creation of resources.
-* `204` for succesful request processing but not response content required.
+* `204` for succesful request processing but no response content required.
 
 
 * `400` generic client issues.
@@ -27,3 +27,5 @@ Some status code to be considered are:
 * `403` usually permission issues. We should differentiate our response between `401` and `403`
     - `401` there is no authorization
     - `403` there is authentication but no permission.
+* `404` the resource that client wanted is Not Found.
+* `405` the HTTP request method is not allowed.
