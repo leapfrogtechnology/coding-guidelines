@@ -1,5 +1,5 @@
 ---
-id: status
+id: status-code
 title: Status Code Usage
 sidebar_label: Status Code
 ---
