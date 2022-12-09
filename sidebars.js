@@ -19,6 +19,7 @@ module.exports =
           "rest-api/delete"
         ]
       },
+      "rest-api/status-code"
       "rest-api/security",
       "rest-api/versioning"
     ],
