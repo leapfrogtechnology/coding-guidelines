@@ -19,7 +19,7 @@ Some status code to be considered are:
 
 * `200` for generic successful response.
 * `201` for creation of resources.
-* `204` for succesful request processing but no response content required.
+* `204` for successful request processing but no response content required.
 
 
 * `400` generic client issues.
