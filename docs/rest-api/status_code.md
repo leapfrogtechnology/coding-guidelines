@@ -1,0 +1,29 @@
+---
+id: status
+title: Status Code Usage
+sidebar_label: Status Code
+---
+
+### Status Code are integral part of HTTP as well as REST API and should be used to differentiate different responses. These should be used by clients according to explanation.
+
+
+
+Most of the explanation on status code is provided in link below:
+
+[Status Code Check](https://httpstatus.com/)
+
+[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+
+Some status code to be considered are:
+
+* `200` for generic successful response.
+* `201` for creation of resources.
+* `204` for succesful request processing but not response content required.
+
+
+* `400` generic client issues.
+* `401` usually authentication and authorization issues.
+* `403` usually permission issues. We should differentiate our response between `401` and `403`
+    - `401` there is no authorization
+    - `403` there is authentication but no permission.

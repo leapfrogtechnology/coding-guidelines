@@ -19,6 +19,8 @@ sidebar_label: Headers
   * <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank">More Examples</a>
 
 * Avoid using headers for business logic
+  - Do avoid custom headers and confine with standard ones almost all the time.
+
 
 * Use headers for parameters that should not appear in the URL
   * for e.g https://api.application.com/users/{id}/fetch?apiKey=abcd123456789 //**BAD Practice**
