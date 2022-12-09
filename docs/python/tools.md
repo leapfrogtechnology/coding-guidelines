@@ -36,7 +36,7 @@ These can be used with dependency Management
 ### Testing:
 * [pytest](https://pytest.org) with [plugins](https://docs.pytest.org/en/7.0.x/reference/plugin_list.html)
     - Alternative: Inbuilt `unittest`
-* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation and mocking in tests.
+* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and [mock](https://docs.python.org/3/library/unittest.mock.html) for data generation and mocking in tests.
 * [tox](https://tox.readthedocs.io/en/latest/) for test automation in different `python` version
     - Alternative: [nox](https://nox.thea.codes/en/stable/) is `tox` with `python` API i.e. py file settings so can be used if you need any dynamism.
 
