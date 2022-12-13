@@ -18,8 +18,9 @@ Most of the explanation on status code is provided in link below:
 Some status code to be considered are:
 
 * `200` for generic successful response.
-* `201` for creation of resources.
+* `201` for creation of resources. Usually with `POST` request.
 * `204` for successful request processing but no response content required.
+    - Usually with `DELETE` and `PATCH` `PUT` request. `HEAD` can use another method where this can be used.
 
 
 * `400` generic client issues.
