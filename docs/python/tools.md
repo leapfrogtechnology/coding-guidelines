@@ -36,11 +36,13 @@ These can be used with dependency Management
 ### Testing:
 * [pytest](https://pytest.org) with [plugins](https://docs.pytest.org/en/7.0.x/reference/plugin_list.html)
     - Alternative: Inbuilt `unittest`
-* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and `mock` for data generation and mocking in tests.
+* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) and [mock](https://docs.python.org/3/library/unittest.mock.html) for data generation and mocking in tests.
 * [tox](https://tox.readthedocs.io/en/latest/) for test automation in different `python` version
     - Alternative: [nox](https://nox.thea.codes/en/stable/) is `tox` with `python` API i.e. py file settings so can be used if you need any dynamism.
 
 ### Other tools:
+* [faker](https://faker.readthedocs.io/en/master/) for fake data generation.
+* [factory_boy](https://factoryboy.readthedocs.io/en/stable/index.html) for fixture generation.
 * [coverage](https://coverage.readthedocs.io/en/coverage-5.1/) for checking code coverage of tests.
 * [interrogate](https://interrogate.readthedocs.io/en/latest/) for docstring coverage check.
 * [mypy](http://mypy-lang.org/index.html) optional static type coding with python through annotations.

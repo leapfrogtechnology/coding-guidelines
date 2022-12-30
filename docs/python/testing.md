@@ -11,7 +11,9 @@ sidebar_label: Testing
 * Always use `pytest` for testing codes.
     + `unittest` provided by standard python can be used too if there is some blockage in using `pytest`.
 * `tox` and `nox` are vey good tools especially for CI and multiple version tests.
-* `hypothesis` and `mock` can be used for faking data and property testing.
+* `mock` should be used for mocking data.
+* `factory_boy` and `faker` can be used for fixtures and fake data.
+* `hypothesis` can be used for property testing.
 * Testing should be broken to `unit` as well as `functional`.
 * Use `coverage` to alert yourself of test coverage. Keep a target of **80 % - 90 %** coverage if **100%** is not achieved.  
 * Only test the changes you made or functionality you added when testing a codebase of well known frameworks.
@@ -23,3 +25,5 @@ sidebar_label: Testing
     + **Unit**: for your code units. Please use `mock` for external dependency and side effects.
     + **Functional**: Your program functionality.
     + **Integration**: Your whole program integration.
+
+See [tools](tools.md) for packages links.
