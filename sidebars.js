@@ -80,7 +80,7 @@ module.exports =
         ]
       }
     ],
-    "React with TS": [
+    "React (TypeScript)": [
       {
         "type": "category",
         "label": "Naming Conventions",
