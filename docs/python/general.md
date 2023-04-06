@@ -11,7 +11,7 @@ It is recommended to upgrade the package dependency whenever possible although v
 :::
 
 * See [tools](tools.md) that can be used in development environment setup to ease your coding process.
-* Always use `python3` and try to stay above version `3.7`. **Latest stable** is always recommended.
+* Always use `python3` and try to stay above version `3.9`. **Latest stable** is always recommended.
 * Indentation should always be **space** and width should always be **4**.
 * File size and functionality:
     - break files into modules if you feel they have multiple functionalities.
@@ -41,7 +41,7 @@ It is recommended to upgrade the package dependency whenever possible although v
             WHEN break DOESNOT HAPPEN
     ```
 * Use `pathlib` for path related use case rather than `os.path`
-* Use type annotation or type hints when possible for type safe code. `mypy` like checker can be used.
+* Use type annotation or type hints for type safe code especially for newer projects. Look into [tools](tools.md) for inference checker.
 * `Docker` can be used for deployment. Use `python` images for [`docker`](https://hub.docker.com/_/python).
 * Use `generators` and `yield` instead of data structures for high streams of data.
 * Use `itertools`, `functools` for utilities and `collections` for data structures when needed.

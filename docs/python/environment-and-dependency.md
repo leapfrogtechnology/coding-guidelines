@@ -15,7 +15,9 @@ sidebar_label: Environment Isolation and Dependency Management
     - [venv](https://docs.python.org/3/tutorial/venv.html). _Inbuilt_ `python -m venv`
 * Use `pip` for installing packages if not using `poetry`.
 
-
+:::info
+Docker based containerized python can be used as well. Official images [here](https://hub.docker.com/_/python). It is better to use virtualenvs in docker as well rather than root based user.
+:::
 
 ### Dependency Management:
 
