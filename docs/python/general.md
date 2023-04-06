@@ -11,7 +11,7 @@ It is recommended to upgrade the package dependency whenever possible although v
 :::
 
 * See [tools](tools.md) that can be used in development environment setup to ease your coding process.
-* Always use `python3` and try to stay above version `3.9`. **Latest stable** is always recommended.
+* Always use `python3`. **Latest stable** is always recommended. Ensure version is no older than 2 versions back. i.e. if current stable is `3.11` then use atleast `3.9`.
 * Indentation should always be **space** and width should always be **4**.
 * File size and functionality:
     - break files into modules if you feel they have multiple functionalities.
