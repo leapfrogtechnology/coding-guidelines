@@ -24,6 +24,7 @@ These can be used with dependency Management
 ### Linters:
 * [flake8](https://flake8.pycqa.org/en/latest/) with [plugins](https://github.com/DmytroLitvinov/awesome-flake8-extensions)
     * Alternative: [pylint](https://www.pylint.org)
+    * Alternative: [ruff](https://beta.ruff.rs/docs/)
 * [bandit](https://bandit.readthedocs.io/en/latest/) to find common security issues. This can be used with `flake8` as a [plugin](https://pypi.org/project/flake8-bandit/)
 
 ### Formatters:
@@ -32,6 +33,13 @@ These can be used with dependency Management
     - Alternative: [yapf](https://pypi.org/project/yapf/) 
 * [isort](https://timothycrosley.github.io/isort/) for sorting only imports in codes. This is OPTIONAL.
     - Alternative: [reorder-python-imports](https://github.com/asottile/reorder_python_imports) another way of sorting imports.
+
+
+### Type Inference
+* [mypy](http://mypy-lang.org/index.html) optional static type coding with python through annotations. from Dropbox but most famous in community.
+    - Alternative: [pyright](https://github.com/microsoft/pyright#readme) from Microsoft. Usually available in VSCode
+    - Alternative: [pyre](https://pyre-check.org/) from Facebook.
+    - Alternative: [pytype](https://google.github.io/pytype/) from Google.
     
 ### Testing:
 * [pytest](https://pytest.org) with [plugins](https://docs.pytest.org/en/7.0.x/reference/plugin_list.html)
@@ -45,7 +53,8 @@ These can be used with dependency Management
 * [factory_boy](https://factoryboy.readthedocs.io/en/stable/index.html) for fixture generation.
 * [coverage](https://coverage.readthedocs.io/en/coverage-5.1/) for checking code coverage of tests.
 * [interrogate](https://interrogate.readthedocs.io/en/latest/) for docstring coverage check.
-* [mypy](http://mypy-lang.org/index.html) optional static type coding with python through annotations.
+
+
 
 ### Readings and References:
 * [Design Patterns](https://python-patterns.guide/)
