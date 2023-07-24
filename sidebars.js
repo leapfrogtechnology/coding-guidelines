@@ -3,7 +3,7 @@ module.exports =
   "docs": {
     "Overview": [
       "introduction",
-      "general/clean-code"
+      "general/clean-code",
     ],
     "REST API": [
       "rest-api/headers",
@@ -24,6 +24,8 @@ module.exports =
       "rest-api/versioning"
     ],
     "Git & GitHub": [
+      "git/pull-request-guidelines",
+      "git/code-review-checklist",
       "git/branch-naming-convention",
       "git/branching-strategy",
       "git/smart-commit",
@@ -33,9 +35,7 @@ module.exports =
         "items": [
           "git/tagging"
         ]
-      },
-      "git/pull-request-best-pratices",
-      "git/code-review-checklist"
+      }
     ],
     "Python": [
       "python/environment-and-dependency",
