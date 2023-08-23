@@ -5,9 +5,9 @@ Provide a general summary of your changes in the Title above.
 Describe your changes in detail.
 
 ## Motivation, Context and link to the ticket
-- Why is this change required? What problem does it solve?
+
+- Why is this change required? What does it do?
 - If it fixes an open issue, please link to the issue here.
-- Link to the related Jira ticket.
 
 ## Related PRs
 
@@ -24,6 +24,7 @@ Link to related pull requests.
 ## Type of change
 
 What types of changes does your code introduce? Put an `x` in all the boxes that apply:
+
 - [ ] Update to existing guideline(s)
 - [ ] New guideline(s)
 - [ ] Miscellaneous change
@@ -40,7 +41,4 @@ If you're unsure about any of these, don't hesitate to ask. Your team members ar
 - [ ] I have read the **CONTRIBUTING** document (if applicable)
 - [ ] I have added tests to cover my changes.
   - [ ] OR no tests update required.
-- [ ] All new and existing tests passed.
 - [ ] One or more required reviews requested.
-- [ ] I have assigned to the TL or Sr. Engineer for merge.
-- [ ] I have updated and verfied the db schema changes and related documentation have been updated.
