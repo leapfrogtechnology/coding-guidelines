@@ -7,32 +7,23 @@ title: Pull Request Guidelines
 # Generic Pull Request Guidelines
 
 
-## Creator Guideline
+## Consider the following points while submitting and reviewing a pull request.
 
+**1. Small and focused changes:** Break down the code into small and manageable units. 
+    This allows for focused work and thorough analysis, making it easier to identify issues and provide constructive feedback.
 
+**2. Review for Functionality:** Verify that the code accomplishes its intended purpose and that it follows the requirements and specifications. Ensure that the code is efficient, maintainable, and scalable.
 
-* Reflect the story/task/ in JIRA to GIT - Description, Link, Design reference, Any additional info.
-    * Think simple
-    * Compose clean, elegant, and readable code.
-* Document only meta information inadequately represented by code
-    * Focus on the Statement of user value
-* Create a branch equivalent to the JIRA ticket - PROJECT-XXX
-* Push your code
-    * ASAP - As soon as possible
-    * AFAP - As frequently as possible
-    * The goal here is to collaborate well with the latest changes. Build once and use many times.
-* Requesting for appropriate reviewers. Follow the steps as
-    * Drafting pull requests
-    * Review by self
-    * Review by others
-* Timely acknowledge feedback on the pull requests
-* Be patient about pull requests
-* Not parallelize too much and create multiple pull requests
-    * In-progress limit of at max 2 pull requests
-* Proper closure and definition of done
-* Open Mindset
-    * Acceptive
-    * Open to enhancements/improvements
+**3. Check Coding Standards:** Evaluate the code against established coding standards and style guidelines. Look for consistency in naming conventions, code formatting, documentation, and error handling practices.
+
+**4. Test Coverage:** Assess the presence and quality of unit tests. Verify that the code is adequately covered by tests and that the tests provide meaningful assertions and cover edge cases.
+
+**5. Performance and Efficiency:** Evaluate the code for performance bottlenecks, resource consumption, and potential scalability issues. Focus on  optimizations and improvements if necessary.
+
+**6. Security Considerations:** Review the code for potential security vulnerabilities such as injection attacks, data exposure, or authentication/authorization flaws. Encourage best practices like input validation, proper encryption, and handling of sensitive information.
+
+**7. Follow PR standard practices:** Use clear and descriptive titles. Provide detailed description of the changes and include screenshots and documentations.
+
 
 
 ## Reviewers Guideline
@@ -49,23 +40,14 @@ title: Pull Request Guidelines
 * Be polite and respectful
 * Don’t just comment for the sake of it
 
+## Additional Role of TL
+**1. Performance and Scalability:** Consider the performance implications of the code changes. Assess whether the code might introduce bottlenecks or negatively impact system performance. Ensure that scalability concerns are addressed if applicable.
 
-## Approval Guideline
+**2. Feature breakdown:** Make sure the features and PR are broken into meaningful chunks during sprint planning.
 
+**3. Architecture and Design:** Check if the code changes align with the overall system architecture and design. Ensure that the proposed changes fit into the existing structure and don't introduce architectural conflicts.
 
-
-* Meets business requirements
-* Adherence to the technical guidelines listed below
-* Resolution of obvious bugs
-* Keep an eye out for nonfunctional requirements
-    * Performance and scalability
-    * Portability and compatibility
-    * Reliability, maintainability, and availability
-    * Security
-    * Localization
-    * Usability
-* Resolution of conflicts
-* Minimum reviewal by two individuals
+**4. Repository maintainer:** Ultimately, the team lead may need to make a decision on whether to approve, request changes, or reject the PR. This decision should be based on the code's quality, alignment with project goals, and any necessary improvements.
 
 
 ## Things to keep in mind
