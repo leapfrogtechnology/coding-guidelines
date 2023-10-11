@@ -29,6 +29,7 @@ module.exports =
       "git/branch-naming-convention",
       "git/branching-strategy",
       "git/smart-commit",
+      "git/pull-request-template",
       {
         "type": "category",
         "label": "Release Management",
