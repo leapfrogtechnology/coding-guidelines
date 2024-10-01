@@ -37,5 +37,6 @@ sidebar_label: Exception Handling
 * `finally` can be used if you need to run the block whatever the case. `context` can be used in many cases to avoid `finally`.
 * `sys.exc_info` and [`traceback`](https://docs.python.org/3/library/traceback.html) can be used for traceback.
 * Please read [this](https://cosmicpercolator.com/2016/01/13/exception-leaks-in-python-2-and-3/) on exceptions handling internals and leaks when referencing exceptions.
+* Learn more about Exception Handling and Logging in detail [here](/general/exceptions-and-logging.md)
 
 
