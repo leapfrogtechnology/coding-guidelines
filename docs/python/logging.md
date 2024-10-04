@@ -18,3 +18,4 @@ sidebar_label: Logging Convention
 * See [Logging Cookbook](https://docs.python.org/3/howto/logging-cookbook.html) for reference.
 * **ERROR and CRITICAL** levels should be mitigated and informed.
     - Always use `exception` method rather than `error` method of `logger` object to log traceback when catching exceptions.
+* Learn more about Exception Handling and Logging in detail [here](/general/exceptions-and-logging.md)

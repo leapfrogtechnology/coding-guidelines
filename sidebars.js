@@ -4,6 +4,7 @@ module.exports =
     "Overview": [
       "introduction",
       "general/clean-code",
+      "general/exceptions-and-logging"
     ],
     "REST API": [
       "rest-api/headers",
