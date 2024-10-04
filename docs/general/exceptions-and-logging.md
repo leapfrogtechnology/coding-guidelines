@@ -18,11 +18,11 @@ In simple terms:
 
 ```python
 try:
-   print(1/0)
+  print(1/0)
 except ZeroDivisionError:
-   print("You cannot divide a value with zero")
+  print("You cannot divide a value with zero")
 except:
-   print("An unexpected error occurred")
+  print("An unexpected error occurred")
 ```
 
 But in Javascript, they refer to the same thing. Javascript only has **Error**. When using try catch or try catch finally blocks, you will deal with both JavaScript Exception and Error. Code-wise the difference has no impact.
@@ -42,18 +42,19 @@ It allows you to avoid having cleanup code accidentally bypassed by a return, co
 
 ```javascript
 function readFileContent(filePath) {
-    let fileHandle; 
-    try {
-        fileHandle = await fs.open(filePath, 'r'); 
-        return; // Early exit
-    } catch (error) {
-        console.log("Caught an error:", error);
-    } finally {
-        if (fileHandle) { 
-		await fileHandle.close();
-        }
+  let fileHandle;
+  try {
+    fileHandle = await fs.open(filePath, 'r');
+
+    return; // Early exit
+  } catch (error) {
+    console.log("Caught an error:", error);
+  } finally {
+    if (fileHandle) {
+      await fileHandle.close();
     }
-    console.log("This will NOT be executed if there's an early return.");
+  }
+  console.log("This statement outside try..catch will NOT be executed if file.open() succeeds");
 }
 ```
 
@@ -76,7 +77,7 @@ Before even thinking about try-catch, try to prevent errors with proper validati
 
 While try-catch is important, overusing it can degrade the performance and readability of your code. Here’s when not to use try-catch:
 
-- **Simple Code**: Avoid wrapping code that is unlikely to throw errors (like basic arithmetic or logic operations) and 
+- **Simple Code**: Avoid wrapping code that is unlikely to throw errors (like basic arithmetic or logic operations) and
 - **Wrapping big code**: Avoid wrapping big chunks of code unless it’s intentional. Catching a big chunk of code will make it hard to find where the actual error occurred.
 - **For Control Flow**: Don’t use try-catch to manage the conditions.
 - **Inside Loops**: Don’t wrap try-catch around loops that process many items, as it can introduce performance overhead. Instead, validate or use try-catch inside the loop only for parts that are risky.
@@ -88,21 +89,22 @@ Always create at least one custom error that inherits Error. Timestamps and trac
 
 ```javascript
 class TrackableError extends Error {
-    constructor(message) {
-        super(message);
-        this.name = 'TrackableError';  // Set the error name
-        this.level = process.env.LOG_LEVEL || 'info',
-        this.timestamp = new Date().toISOString();  // Add the timestamp
-    }
-    withInfo() {
-        return `${this.level} Error Name: ${this.name} [Timestamp: ${this.timestamp}] [Message: ${this.message}]`;
-    }
+  constructor(message) {
+    super(message);
+    this.name = 'TrackableError';  // Set the error name
+    this.level = process.env.LOG_LEVEL || 'info',
+    this.timestamp = new Date().toISOString();  // Add the timestamp
+  }
+  withInfo() {
+    return `${this.level} Error Name: ${this.name} [Timestamp: ${this.timestamp}] [Message: ${this.message}]`;
+  }
 }
+
 try {
-    throw new TrackableError('Something went wrong!');
+  throw new TrackableError('Something went wrong!');
 } catch (error) {
-    console.error(error.toString()); // This outputs basic info
-    console.error(error.withInfo()); // This outputs on details
+  console.error(error.toString()); // This outputs basic info
+  console.error(error.withInfo()); // This outputs on details
 }
 ```
 Always have a habit of testing your logs as well. While writing unit tests, have few assertions about type of Errors to expect from the provided input. Logs are the only medium your application speaks to you while debugging. Log errors for future reference and debugging purposes. Make sure to log enough information to help you understand the context in which the error occurred. Don't forget to handle errors in asynchronous code, such as Promises and async/await functions [Read more](https://accreditly.io/articles/a-comprehensive-guide-to-exception-handling-in-javascript). Failing to handle errors in these scenarios can lead to unhandled promise rejections and unexpected application behavior.
